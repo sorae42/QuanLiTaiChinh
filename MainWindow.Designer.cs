@@ -43,10 +43,8 @@
             spendID = new ColumnHeader();
             spendName = new ColumnHeader();
             spendAmount = new ColumnHeader();
-            deleteBtn = new Button();
             dateChooser = new DateTimePicker();
             profileTab = new TabPage();
-            logoutBtn = new Button();
             profileNameLabel = new Label();
             noticeLabel = new Label();
             label2 = new Label();
@@ -126,7 +124,6 @@
             // historyTab
             // 
             historyTab.Controls.Add(spendingList);
-            historyTab.Controls.Add(deleteBtn);
             historyTab.Controls.Add(dateChooser);
             resources.ApplyResources(historyTab, "historyTab");
             historyTab.Name = "historyTab";
@@ -152,12 +149,6 @@
             // 
             resources.ApplyResources(spendAmount, "spendAmount");
             // 
-            // deleteBtn
-            // 
-            resources.ApplyResources(deleteBtn, "deleteBtn");
-            deleteBtn.Name = "deleteBtn";
-            deleteBtn.UseVisualStyleBackColor = true;
-            // 
             // dateChooser
             // 
             resources.ApplyResources(dateChooser, "dateChooser");
@@ -166,18 +157,11 @@
             // 
             // profileTab
             // 
-            profileTab.Controls.Add(logoutBtn);
             profileTab.Controls.Add(profileNameLabel);
             profileTab.Controls.Add(label7);
             resources.ApplyResources(profileTab, "profileTab");
             profileTab.Name = "profileTab";
             profileTab.UseVisualStyleBackColor = true;
-            // 
-            // logoutBtn
-            // 
-            resources.ApplyResources(logoutBtn, "logoutBtn");
-            logoutBtn.Name = "logoutBtn";
-            logoutBtn.UseVisualStyleBackColor = true;
             // 
             // profileNameLabel
             // 
@@ -202,6 +186,7 @@
             Name = "MainWindow";
             ShowIcon = false;
             Load += MainWindow_Load;
+            FormClosing += MainWindow_FormClosing;
             appTabs.ResumeLayout(false);
             addFundTab.ResumeLayout(false);
             addFundTab.PerformLayout();
@@ -220,12 +205,10 @@
         private MonthCalendar dateSelector;
         private TextBox fundingNameInput;
         private Button addSpendingBtn;
-        private Button deleteBtn;
         private DateTimePicker dateChooser;
         private NumericUpDown fundSpentInput;
         private Label noticeLabel;
         private TabPage profileTab;
-        private Button logoutBtn;
         private Label profileNameLabel;
         private Label label7;
         private ListView spendingList;

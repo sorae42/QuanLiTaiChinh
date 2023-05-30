@@ -23,6 +23,11 @@ namespace QuanLiTaiChinh
             this.Refresh();
         }
 
+        private void MainWindow_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            this.Close();
+        }
+
         // Add Spending Tab
         private void addSpendingBtn_Click(object sender, EventArgs e)
         {

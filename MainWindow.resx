@@ -207,7 +207,7 @@
     <value>profileTab</value>
   </data>
   <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>1</value>
   </data>
   <data name="fundSpentInput.Location" type="System.Drawing.Point, System.Drawing">
     <value>9, 250</value>
@@ -362,7 +362,7 @@
     <value>9, 35</value>
   </data>
   <data name="spendingList.Size" type="System.Drawing.Size, System.Drawing">
-    <value>227, 262</value>
+    <value>227, 291</value>
   </data>
   <data name="spendingList.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -378,30 +378,6 @@
   </data>
   <data name="&gt;&gt;spendingList.ZOrder" xml:space="preserve">
     <value>0</value>
-  </data>
-  <data name="deleteBtn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>161, 303</value>
-  </data>
-  <data name="deleteBtn.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
-  </data>
-  <data name="deleteBtn.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="deleteBtn.Text" xml:space="preserve">
-    <value>Xóa</value>
-  </data>
-  <data name="&gt;&gt;deleteBtn.Name" xml:space="preserve">
-    <value>deleteBtn</value>
-  </data>
-  <data name="&gt;&gt;deleteBtn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;deleteBtn.Parent" xml:space="preserve">
-    <value>historyTab</value>
-  </data>
-  <data name="&gt;&gt;deleteBtn.ZOrder" xml:space="preserve">
-    <value>1</value>
   </data>
   <data name="dateChooser.Location" type="System.Drawing.Point, System.Drawing">
     <value>9, 6</value>
@@ -422,7 +398,7 @@
     <value>historyTab</value>
   </data>
   <data name="&gt;&gt;dateChooser.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>1</value>
   </data>
   <data name="historyTab.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 24</value>
@@ -450,30 +426,6 @@
   </data>
   <data name="&gt;&gt;historyTab.ZOrder" xml:space="preserve">
     <value>1</value>
-  </data>
-  <data name="logoutBtn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>161, 294</value>
-  </data>
-  <data name="logoutBtn.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 26</value>
-  </data>
-  <data name="logoutBtn.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="logoutBtn.Text" xml:space="preserve">
-    <value>Đăng xuất</value>
-  </data>
-  <data name="&gt;&gt;logoutBtn.Name" xml:space="preserve">
-    <value>logoutBtn</value>
-  </data>
-  <data name="&gt;&gt;logoutBtn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;logoutBtn.Parent" xml:space="preserve">
-    <value>profileTab</value>
-  </data>
-  <data name="&gt;&gt;logoutBtn.ZOrder" xml:space="preserve">
-    <value>0</value>
   </data>
   <data name="profileNameLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -506,7 +458,7 @@
     <value>profileTab</value>
   </data>
   <data name="&gt;&gt;profileNameLabel.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>0</value>
   </data>
   <data name="profileTab.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 24</value>
