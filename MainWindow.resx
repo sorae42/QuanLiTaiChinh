@@ -126,7 +126,7 @@
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 236</value>
+    <value>9, 231</value>
   </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
     <value>108, 15</value>
@@ -156,7 +156,7 @@
     <value>True</value>
   </data>
   <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>8, 183</value>
+    <value>8, 179</value>
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
     <value>67, 15</value>
@@ -178,6 +178,81 @@
   </data>
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
     <value>4</value>
+  </data>
+  <data name="&gt;&gt;addFundTab.Name" xml:space="preserve">
+    <value>addFundTab</value>
+  </data>
+  <data name="&gt;&gt;addFundTab.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;addFundTab.Parent" xml:space="preserve">
+    <value>appTabs</value>
+  </data>
+  <data name="&gt;&gt;addFundTab.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;historyTab.Name" xml:space="preserve">
+    <value>historyTab</value>
+  </data>
+  <data name="&gt;&gt;historyTab.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;historyTab.Parent" xml:space="preserve">
+    <value>appTabs</value>
+  </data>
+  <data name="&gt;&gt;historyTab.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;profileTab.Name" xml:space="preserve">
+    <value>profileTab</value>
+  </data>
+  <data name="&gt;&gt;profileTab.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;profileTab.Parent" xml:space="preserve">
+    <value>appTabs</value>
+  </data>
+  <data name="&gt;&gt;profileTab.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;preferencesTab.Name" xml:space="preserve">
+    <value>preferencesTab</value>
+  </data>
+  <data name="&gt;&gt;preferencesTab.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;preferencesTab.Parent" xml:space="preserve">
+    <value>appTabs</value>
+  </data>
+  <data name="&gt;&gt;preferencesTab.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="appTabs.Location" type="System.Drawing.Point, System.Drawing">
+    <value>-1, 0</value>
+  </data>
+  <data name="appTabs.Padding" type="System.Drawing.Point, System.Drawing">
+    <value>8, 3</value>
+  </data>
+  <data name="appTabs.ShowToolTips" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="appTabs.Size" type="System.Drawing.Size, System.Drawing">
+    <value>254, 360</value>
+  </data>
+  <data name="appTabs.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;appTabs.Name" xml:space="preserve">
+    <value>appTabs</value>
+  </data>
+  <data name="&gt;&gt;appTabs.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;appTabs.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;appTabs.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="&gt;&gt;fundSpentInput.Name" xml:space="preserve">
     <value>fundSpentInput</value>
@@ -255,6 +330,109 @@
   <data name="&gt;&gt;addFundTab.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <data name="fundSpentInput.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 250</value>
+  </data>
+  <data name="fundSpentInput.Size" type="System.Drawing.Size, System.Drawing">
+    <value>227, 23</value>
+  </data>
+  <data name="fundSpentInput.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="fundSpentInput.ThousandsSeparator" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;fundSpentInput.Name" xml:space="preserve">
+    <value>fundSpentInput</value>
+  </data>
+  <data name="&gt;&gt;fundSpentInput.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;fundSpentInput.Parent" xml:space="preserve">
+    <value>addFundTab</value>
+  </data>
+  <data name="&gt;&gt;fundSpentInput.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="addSpendingBtn.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 14.25pt, style=Bold</value>
+  </data>
+  <data name="addSpendingBtn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 283</value>
+  </data>
+  <data name="addSpendingBtn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>227, 43</value>
+  </data>
+  <data name="addSpendingBtn.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="addSpendingBtn.Text" xml:space="preserve">
+    <value>Thêm chi tiêu</value>
+  </data>
+  <data name="&gt;&gt;addSpendingBtn.Name" xml:space="preserve">
+    <value>addSpendingBtn</value>
+  </data>
+  <data name="&gt;&gt;addSpendingBtn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;addSpendingBtn.Parent" xml:space="preserve">
+    <value>addFundTab</value>
+  </data>
+  <data name="&gt;&gt;addSpendingBtn.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="fundingNameInput.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 197</value>
+  </data>
+  <data name="fundingNameInput.MaxLength" type="System.Int32, mscorlib">
+    <value>256</value>
+  </data>
+  <data name="fundingNameInput.PlaceholderText" xml:space="preserve">
+    <value>Đồ ăn, hàng hóa,...</value>
+  </data>
+  <data name="fundingNameInput.Size" type="System.Drawing.Size, System.Drawing">
+    <value>227, 23</value>
+  </data>
+  <data name="fundingNameInput.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="fundingNameInput.WordWrap" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;fundingNameInput.Name" xml:space="preserve">
+    <value>fundingNameInput</value>
+  </data>
+  <data name="&gt;&gt;fundingNameInput.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;fundingNameInput.Parent" xml:space="preserve">
+    <value>addFundTab</value>
+  </data>
+  <data name="&gt;&gt;fundingNameInput.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="dateSelector.FirstDayOfWeek" type="System.Windows.Forms.Day, System.Windows.Forms">
+    <value>Monday</value>
+  </data>
+  <data name="dateSelector.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 12</value>
+  </data>
+  <data name="dateSelector.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;dateSelector.Name" xml:space="preserve">
+    <value>dateSelector</value>
+  </data>
+  <data name="&gt;&gt;dateSelector.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MonthCalendar, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dateSelector.Parent" xml:space="preserve">
+    <value>addFundTab</value>
+  </data>
+  <data name="&gt;&gt;dateSelector.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
   <data name="&gt;&gt;deleteBtn.Name" xml:space="preserve">
     <value>deleteBtn</value>
   </data>
@@ -317,349 +495,6 @@
   </data>
   <data name="&gt;&gt;historyTab.ZOrder" xml:space="preserve">
     <value>1</value>
-  </data>
-  <data name="&gt;&gt;label3.Name" xml:space="preserve">
-    <value>label3</value>
-  </data>
-  <data name="&gt;&gt;label3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
-    <value>groupBox3</value>
-  </data>
-  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;defaultSpendingNameInput.Name" xml:space="preserve">
-    <value>defaultSpendingNameInput</value>
-  </data>
-  <data name="&gt;&gt;defaultSpendingNameInput.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;defaultSpendingNameInput.Parent" xml:space="preserve">
-    <value>groupBox3</value>
-  </data>
-  <data name="&gt;&gt;defaultSpendingNameInput.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;label4.Name" xml:space="preserve">
-    <value>label4</value>
-  </data>
-  <data name="&gt;&gt;label4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
-    <value>groupBox3</value>
-  </data>
-  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="groupBox3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 2</value>
-  </data>
-  <data name="groupBox3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>227, 100</value>
-  </data>
-  <data name="groupBox3.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
-  </data>
-  <data name="groupBox3.Text" xml:space="preserve">
-    <value>Mặc định</value>
-  </data>
-  <data name="&gt;&gt;groupBox3.Name" xml:space="preserve">
-    <value>groupBox3</value>
-  </data>
-  <data name="&gt;&gt;groupBox3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;groupBox3.Parent" xml:space="preserve">
-    <value>preferencesTab</value>
-  </data>
-  <data name="&gt;&gt;groupBox3.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;label5.Name" xml:space="preserve">
-    <value>label5</value>
-  </data>
-  <data name="&gt;&gt;label5.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label5.Parent" xml:space="preserve">
-    <value>groupBox2</value>
-  </data>
-  <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;spendingLimitInput.Name" xml:space="preserve">
-    <value>spendingLimitInput</value>
-  </data>
-  <data name="&gt;&gt;spendingLimitInput.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;spendingLimitInput.Parent" xml:space="preserve">
-    <value>groupBox2</value>
-  </data>
-  <data name="&gt;&gt;spendingLimitInput.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="groupBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 103</value>
-  </data>
-  <data name="groupBox2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>227, 82</value>
-  </data>
-  <data name="groupBox2.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
-  </data>
-  <data name="groupBox2.Text" xml:space="preserve">
-    <value>Giới hạn</value>
-  </data>
-  <data name="&gt;&gt;groupBox2.Name" xml:space="preserve">
-    <value>groupBox2</value>
-  </data>
-  <data name="&gt;&gt;groupBox2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;groupBox2.Parent" xml:space="preserve">
-    <value>preferencesTab</value>
-  </data>
-  <data name="&gt;&gt;groupBox2.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;autoLaunchTab.Name" xml:space="preserve">
-    <value>autoLaunchTab</value>
-  </data>
-  <data name="&gt;&gt;autoLaunchTab.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;autoLaunchTab.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;autoLaunchTab.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;label6.Name" xml:space="preserve">
-    <value>label6</value>
-  </data>
-  <data name="&gt;&gt;label6.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label6.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;radioButton2.Name" xml:space="preserve">
-    <value>radioButton2</value>
-  </data>
-  <data name="&gt;&gt;radioButton2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;radioButton2.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;radioButton2.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="groupBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 186</value>
-  </data>
-  <data name="groupBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>227, 82</value>
-  </data>
-  <data name="groupBox1.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="groupBox1.Text" xml:space="preserve">
-    <value>Khởi động</value>
-  </data>
-  <data name="&gt;&gt;groupBox1.Name" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;groupBox1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;groupBox1.Parent" xml:space="preserve">
-    <value>preferencesTab</value>
-  </data>
-  <data name="&gt;&gt;groupBox1.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="button1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left, Right</value>
-  </data>
-  <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>51, 284</value>
-  </data>
-  <data name="button1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>141, 33</value>
-  </data>
-  <data name="button1.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="button1.Text" xml:space="preserve">
-    <value>Lưu thay đổi cài đặt</value>
-  </data>
-  <data name="&gt;&gt;button1.Name" xml:space="preserve">
-    <value>button1</value>
-  </data>
-  <data name="&gt;&gt;button1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button1.Parent" xml:space="preserve">
-    <value>preferencesTab</value>
-  </data>
-  <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="preferencesTab.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 24</value>
-  </data>
-  <data name="preferencesTab.Size" type="System.Drawing.Size, System.Drawing">
-    <value>246, 332</value>
-  </data>
-  <data name="preferencesTab.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="preferencesTab.Text" xml:space="preserve">
-    <value>Cài đặt</value>
-  </data>
-  <data name="&gt;&gt;preferencesTab.Name" xml:space="preserve">
-    <value>preferencesTab</value>
-  </data>
-  <data name="&gt;&gt;preferencesTab.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;preferencesTab.Parent" xml:space="preserve">
-    <value>appTabs</value>
-  </data>
-  <data name="&gt;&gt;preferencesTab.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="appTabs.Location" type="System.Drawing.Point, System.Drawing">
-    <value>-1, 0</value>
-  </data>
-  <data name="appTabs.Size" type="System.Drawing.Size, System.Drawing">
-    <value>254, 360</value>
-  </data>
-  <data name="appTabs.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;appTabs.Name" xml:space="preserve">
-    <value>appTabs</value>
-  </data>
-  <data name="&gt;&gt;appTabs.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;appTabs.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;appTabs.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="fundSpentInput.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 254</value>
-  </data>
-  <data name="fundSpentInput.Size" type="System.Drawing.Size, System.Drawing">
-    <value>227, 23</value>
-  </data>
-  <data name="fundSpentInput.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="fundSpentInput.ThousandsSeparator" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;fundSpentInput.Name" xml:space="preserve">
-    <value>fundSpentInput</value>
-  </data>
-  <data name="&gt;&gt;fundSpentInput.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;fundSpentInput.Parent" xml:space="preserve">
-    <value>addFundTab</value>
-  </data>
-  <data name="&gt;&gt;fundSpentInput.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="addSpendingBtn.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 14.25pt, style=Bold</value>
-  </data>
-  <data name="addSpendingBtn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 293</value>
-  </data>
-  <data name="addSpendingBtn.Size" type="System.Drawing.Size, System.Drawing">
-    <value>227, 33</value>
-  </data>
-  <data name="addSpendingBtn.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="addSpendingBtn.Text" xml:space="preserve">
-    <value>Thêm chi tiêu</value>
-  </data>
-  <data name="&gt;&gt;addSpendingBtn.Name" xml:space="preserve">
-    <value>addSpendingBtn</value>
-  </data>
-  <data name="&gt;&gt;addSpendingBtn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;addSpendingBtn.Parent" xml:space="preserve">
-    <value>addFundTab</value>
-  </data>
-  <data name="&gt;&gt;addSpendingBtn.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="fundingNameInput.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 201</value>
-  </data>
-  <data name="fundingNameInput.MaxLength" type="System.Int32, mscorlib">
-    <value>256</value>
-  </data>
-  <data name="fundingNameInput.PlaceholderText" xml:space="preserve">
-    <value>Đồ ăn, hàng hóa,...</value>
-  </data>
-  <data name="fundingNameInput.Size" type="System.Drawing.Size, System.Drawing">
-    <value>227, 23</value>
-  </data>
-  <data name="fundingNameInput.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="fundingNameInput.WordWrap" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;fundingNameInput.Name" xml:space="preserve">
-    <value>fundingNameInput</value>
-  </data>
-  <data name="&gt;&gt;fundingNameInput.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;fundingNameInput.Parent" xml:space="preserve">
-    <value>addFundTab</value>
-  </data>
-  <data name="&gt;&gt;fundingNameInput.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="dateSelector.FirstDayOfWeek" type="System.Windows.Forms.Day, System.Windows.Forms">
-    <value>Monday</value>
-  </data>
-  <data name="dateSelector.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 12</value>
-  </data>
-  <data name="dateSelector.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;dateSelector.Name" xml:space="preserve">
-    <value>dateSelector</value>
-  </data>
-  <data name="&gt;&gt;dateSelector.Type" xml:space="preserve">
-    <value>System.Windows.Forms.MonthCalendar, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;dateSelector.Parent" xml:space="preserve">
-    <value>addFundTab</value>
-  </data>
-  <data name="&gt;&gt;dateSelector.ZOrder" xml:space="preserve">
-    <value>5</value>
   </data>
   <data name="deleteBtn.Location" type="System.Drawing.Point, System.Drawing">
     <value>161, 303</value>
@@ -730,6 +565,138 @@
   <data name="&gt;&gt;dateChooser.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
+  <data name="&gt;&gt;defaultNamePref.Name" xml:space="preserve">
+    <value>defaultNamePref</value>
+  </data>
+  <data name="&gt;&gt;defaultNamePref.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;defaultNamePref.Parent" xml:space="preserve">
+    <value>preferencesTab</value>
+  </data>
+  <data name="&gt;&gt;defaultNamePref.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;limitSpendingPref.Name" xml:space="preserve">
+    <value>limitSpendingPref</value>
+  </data>
+  <data name="&gt;&gt;limitSpendingPref.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;limitSpendingPref.Parent" xml:space="preserve">
+    <value>preferencesTab</value>
+  </data>
+  <data name="&gt;&gt;limitSpendingPref.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;startupPref.Name" xml:space="preserve">
+    <value>startupPref</value>
+  </data>
+  <data name="&gt;&gt;startupPref.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;startupPref.Parent" xml:space="preserve">
+    <value>preferencesTab</value>
+  </data>
+  <data name="&gt;&gt;startupPref.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;button1.Name" xml:space="preserve">
+    <value>button1</value>
+  </data>
+  <data name="&gt;&gt;button1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button1.Parent" xml:space="preserve">
+    <value>preferencesTab</value>
+  </data>
+  <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="preferencesTab.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 24</value>
+  </data>
+  <data name="preferencesTab.Size" type="System.Drawing.Size, System.Drawing">
+    <value>246, 332</value>
+  </data>
+  <data name="preferencesTab.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="preferencesTab.Text" xml:space="preserve">
+    <value>Cài đặt</value>
+  </data>
+  <data name="&gt;&gt;preferencesTab.Name" xml:space="preserve">
+    <value>preferencesTab</value>
+  </data>
+  <data name="&gt;&gt;preferencesTab.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;preferencesTab.Parent" xml:space="preserve">
+    <value>appTabs</value>
+  </data>
+  <data name="&gt;&gt;preferencesTab.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;label3.Name" xml:space="preserve">
+    <value>label3</value>
+  </data>
+  <data name="&gt;&gt;label3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
+    <value>defaultNamePref</value>
+  </data>
+  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;defaultSpendingNameInput.Name" xml:space="preserve">
+    <value>defaultSpendingNameInput</value>
+  </data>
+  <data name="&gt;&gt;defaultSpendingNameInput.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;defaultSpendingNameInput.Parent" xml:space="preserve">
+    <value>defaultNamePref</value>
+  </data>
+  <data name="&gt;&gt;defaultSpendingNameInput.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;label4.Name" xml:space="preserve">
+    <value>label4</value>
+  </data>
+  <data name="&gt;&gt;label4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
+    <value>defaultNamePref</value>
+  </data>
+  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="defaultNamePref.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 2</value>
+  </data>
+  <data name="defaultNamePref.Size" type="System.Drawing.Size, System.Drawing">
+    <value>227, 100</value>
+  </data>
+  <data name="defaultNamePref.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="defaultNamePref.Text" xml:space="preserve">
+    <value>Mặc định</value>
+  </data>
+  <data name="&gt;&gt;defaultNamePref.Name" xml:space="preserve">
+    <value>defaultNamePref</value>
+  </data>
+  <data name="&gt;&gt;defaultNamePref.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;defaultNamePref.Parent" xml:space="preserve">
+    <value>preferencesTab</value>
+  </data>
+  <data name="&gt;&gt;defaultNamePref.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="label3.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -752,7 +719,7 @@
     <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;label3.Parent" xml:space="preserve">
-    <value>groupBox3</value>
+    <value>defaultNamePref</value>
   </data>
   <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
     <value>0</value>
@@ -779,7 +746,7 @@
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;defaultSpendingNameInput.Parent" xml:space="preserve">
-    <value>groupBox3</value>
+    <value>defaultNamePref</value>
   </data>
   <data name="&gt;&gt;defaultSpendingNameInput.ZOrder" xml:space="preserve">
     <value>1</value>
@@ -804,6 +771,9 @@
 tên chi tiêu trong lúc thêm một chi tiêu mới
 </value>
   </data>
+  <data name="label4.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
   <data name="&gt;&gt;label4.Name" xml:space="preserve">
     <value>label4</value>
   </data>
@@ -811,10 +781,58 @@ tên chi tiêu trong lúc thêm một chi tiêu mới
     <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;label4.Parent" xml:space="preserve">
-    <value>groupBox3</value>
+    <value>defaultNamePref</value>
   </data>
   <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
     <value>2</value>
+  </data>
+  <data name="&gt;&gt;label5.Name" xml:space="preserve">
+    <value>label5</value>
+  </data>
+  <data name="&gt;&gt;label5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label5.Parent" xml:space="preserve">
+    <value>limitSpendingPref</value>
+  </data>
+  <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;spendingLimitInput.Name" xml:space="preserve">
+    <value>spendingLimitInput</value>
+  </data>
+  <data name="&gt;&gt;spendingLimitInput.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;spendingLimitInput.Parent" xml:space="preserve">
+    <value>limitSpendingPref</value>
+  </data>
+  <data name="&gt;&gt;spendingLimitInput.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="limitSpendingPref.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 103</value>
+  </data>
+  <data name="limitSpendingPref.Size" type="System.Drawing.Size, System.Drawing">
+    <value>227, 82</value>
+  </data>
+  <data name="limitSpendingPref.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="limitSpendingPref.Text" xml:space="preserve">
+    <value>Giới hạn</value>
+  </data>
+  <data name="&gt;&gt;limitSpendingPref.Name" xml:space="preserve">
+    <value>limitSpendingPref</value>
+  </data>
+  <data name="&gt;&gt;limitSpendingPref.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;limitSpendingPref.Parent" xml:space="preserve">
+    <value>preferencesTab</value>
+  </data>
+  <data name="&gt;&gt;limitSpendingPref.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="label5.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -839,7 +857,7 @@ vượt quá (VND - Nhập 0 để tắt)</value>
     <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;label5.Parent" xml:space="preserve">
-    <value>groupBox2</value>
+    <value>limitSpendingPref</value>
   </data>
   <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
     <value>0</value>
@@ -863,37 +881,109 @@ vượt quá (VND - Nhập 0 để tắt)</value>
     <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;spendingLimitInput.Parent" xml:space="preserve">
-    <value>groupBox2</value>
+    <value>limitSpendingPref</value>
   </data>
   <data name="&gt;&gt;spendingLimitInput.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="autoLaunchTab.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="&gt;&gt;launchProfile.Name" xml:space="preserve">
+    <value>launchProfile</value>
   </data>
-  <data name="autoLaunchTab.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 35</value>
-  </data>
-  <data name="autoLaunchTab.Size" type="System.Drawing.Size, System.Drawing">
-    <value>97, 19</value>
-  </data>
-  <data name="autoLaunchTab.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="autoLaunchTab.Text" xml:space="preserve">
-    <value>Thêm chi tiêu</value>
-  </data>
-  <data name="&gt;&gt;autoLaunchTab.Name" xml:space="preserve">
-    <value>autoLaunchTab</value>
-  </data>
-  <data name="&gt;&gt;autoLaunchTab.Type" xml:space="preserve">
+  <data name="&gt;&gt;launchProfile.Type" xml:space="preserve">
     <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;autoLaunchTab.Parent" xml:space="preserve">
-    <value>groupBox1</value>
+  <data name="&gt;&gt;launchProfile.Parent" xml:space="preserve">
+    <value>startupPref</value>
   </data>
-  <data name="&gt;&gt;autoLaunchTab.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;launchProfile.ZOrder" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="&gt;&gt;launchAddSpending.Name" xml:space="preserve">
+    <value>launchAddSpending</value>
+  </data>
+  <data name="&gt;&gt;launchAddSpending.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;launchAddSpending.Parent" xml:space="preserve">
+    <value>startupPref</value>
+  </data>
+  <data name="&gt;&gt;launchAddSpending.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;label6.Name" xml:space="preserve">
+    <value>label6</value>
+  </data>
+  <data name="&gt;&gt;label6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label6.Parent" xml:space="preserve">
+    <value>startupPref</value>
+  </data>
+  <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;launchHistory.Name" xml:space="preserve">
+    <value>launchHistory</value>
+  </data>
+  <data name="&gt;&gt;launchHistory.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;launchHistory.Parent" xml:space="preserve">
+    <value>startupPref</value>
+  </data>
+  <data name="&gt;&gt;launchHistory.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="startupPref.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 186</value>
+  </data>
+  <data name="startupPref.Size" type="System.Drawing.Size, System.Drawing">
+    <value>227, 101</value>
+  </data>
+  <data name="startupPref.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="startupPref.Text" xml:space="preserve">
+    <value>Khởi động</value>
+  </data>
+  <data name="&gt;&gt;startupPref.Name" xml:space="preserve">
+    <value>startupPref</value>
+  </data>
+  <data name="&gt;&gt;startupPref.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;startupPref.Parent" xml:space="preserve">
+    <value>preferencesTab</value>
+  </data>
+  <data name="&gt;&gt;startupPref.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="launchAddSpending.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="launchAddSpending.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 35</value>
+  </data>
+  <data name="launchAddSpending.Size" type="System.Drawing.Size, System.Drawing">
+    <value>97, 19</value>
+  </data>
+  <data name="launchAddSpending.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="launchAddSpending.Text" xml:space="preserve">
+    <value>Thêm chi tiêu</value>
+  </data>
+  <data name="&gt;&gt;launchAddSpending.Name" xml:space="preserve">
+    <value>launchAddSpending</value>
+  </data>
+  <data name="&gt;&gt;launchAddSpending.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;launchAddSpending.Parent" xml:space="preserve">
+    <value>startupPref</value>
+  </data>
+  <data name="&gt;&gt;launchAddSpending.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="label6.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -917,37 +1007,64 @@ vượt quá (VND - Nhập 0 để tắt)</value>
     <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;label6.Parent" xml:space="preserve">
-    <value>groupBox1</value>
+    <value>startupPref</value>
   </data>
   <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
-  <data name="radioButton2.AutoSize" type="System.Boolean, mscorlib">
+  <data name="launchHistory.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="radioButton2.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="launchHistory.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 54</value>
   </data>
-  <data name="radioButton2.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="launchHistory.Size" type="System.Drawing.Size, System.Drawing">
     <value>62, 19</value>
   </data>
-  <data name="radioButton2.TabIndex" type="System.Int32, mscorlib">
+  <data name="launchHistory.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
   </data>
-  <data name="radioButton2.Text" xml:space="preserve">
+  <data name="launchHistory.Text" xml:space="preserve">
     <value>Lịch sử</value>
   </data>
-  <data name="&gt;&gt;radioButton2.Name" xml:space="preserve">
-    <value>radioButton2</value>
+  <data name="&gt;&gt;launchHistory.Name" xml:space="preserve">
+    <value>launchHistory</value>
   </data>
-  <data name="&gt;&gt;radioButton2.Type" xml:space="preserve">
+  <data name="&gt;&gt;launchHistory.Type" xml:space="preserve">
     <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;radioButton2.Parent" xml:space="preserve">
-    <value>groupBox1</value>
+  <data name="&gt;&gt;launchHistory.Parent" xml:space="preserve">
+    <value>startupPref</value>
   </data>
-  <data name="&gt;&gt;radioButton2.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="&gt;&gt;launchHistory.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="button1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>51, 293</value>
+  </data>
+  <data name="button1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>141, 33</value>
+  </data>
+  <data name="button1.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="button1.Text" xml:space="preserve">
+    <value>Lưu thay đổi cài đặt</value>
+  </data>
+  <data name="&gt;&gt;button1.Name" xml:space="preserve">
+    <value>button1</value>
+  </data>
+  <data name="&gt;&gt;button1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button1.Parent" xml:space="preserve">
+    <value>preferencesTab</value>
+  </data>
+  <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
   <data name="noticeLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -976,6 +1093,177 @@ vượt quá (VND - Nhập 0 để tắt)</value>
   <data name="&gt;&gt;noticeLabel.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <data name="&gt;&gt;logoutBtn.Name" xml:space="preserve">
+    <value>logoutBtn</value>
+  </data>
+  <data name="&gt;&gt;logoutBtn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;logoutBtn.Parent" xml:space="preserve">
+    <value>profileTab</value>
+  </data>
+  <data name="&gt;&gt;logoutBtn.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;profileNameLabel.Name" xml:space="preserve">
+    <value>profileNameLabel</value>
+  </data>
+  <data name="&gt;&gt;profileNameLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;profileNameLabel.Parent" xml:space="preserve">
+    <value>profileTab</value>
+  </data>
+  <data name="&gt;&gt;profileNameLabel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;label7.Name" xml:space="preserve">
+    <value>label7</value>
+  </data>
+  <data name="&gt;&gt;label7.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label7.Parent" xml:space="preserve">
+    <value>profileTab</value>
+  </data>
+  <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="profileTab.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 24</value>
+  </data>
+  <data name="profileTab.Size" type="System.Drawing.Size, System.Drawing">
+    <value>246, 332</value>
+  </data>
+  <data name="profileTab.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="profileTab.Text" xml:space="preserve">
+    <value>Hồ sơ</value>
+  </data>
+  <data name="&gt;&gt;profileTab.Name" xml:space="preserve">
+    <value>profileTab</value>
+  </data>
+  <data name="&gt;&gt;profileTab.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;profileTab.Parent" xml:space="preserve">
+    <value>appTabs</value>
+  </data>
+  <data name="&gt;&gt;profileTab.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="launchProfile.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="launchProfile.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 73</value>
+  </data>
+  <data name="launchProfile.Size" type="System.Drawing.Size, System.Drawing">
+    <value>56, 19</value>
+  </data>
+  <data name="launchProfile.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="launchProfile.Text" xml:space="preserve">
+    <value>Hồ sơ</value>
+  </data>
+  <data name="&gt;&gt;launchProfile.Name" xml:space="preserve">
+    <value>launchProfile</value>
+  </data>
+  <data name="&gt;&gt;launchProfile.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;launchProfile.Parent" xml:space="preserve">
+    <value>startupPref</value>
+  </data>
+  <data name="&gt;&gt;launchProfile.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="label7.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 9</value>
+  </data>
+  <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>132, 15</value>
+  </data>
+  <data name="label7.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="label7.Text" xml:space="preserve">
+    <value>Đã đăng nhập với hồ sơ</value>
+  </data>
+  <data name="&gt;&gt;label7.Name" xml:space="preserve">
+    <value>label7</value>
+  </data>
+  <data name="&gt;&gt;label7.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label7.Parent" xml:space="preserve">
+    <value>profileTab</value>
+  </data>
+  <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="profileNameLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="profileNameLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9.75pt, style=Bold</value>
+  </data>
+  <data name="profileNameLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 30</value>
+  </data>
+  <data name="profileNameLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>136, 17</value>
+  </data>
+  <data name="profileNameLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="profileNameLabel.Text" xml:space="preserve">
+    <value>Profiles.profileName</value>
+  </data>
+  <data name="profileNameLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopCenter</value>
+  </data>
+  <data name="&gt;&gt;profileNameLabel.Name" xml:space="preserve">
+    <value>profileNameLabel</value>
+  </data>
+  <data name="&gt;&gt;profileNameLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;profileNameLabel.Parent" xml:space="preserve">
+    <value>profileTab</value>
+  </data>
+  <data name="&gt;&gt;profileNameLabel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="logoutBtn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>161, 294</value>
+  </data>
+  <data name="logoutBtn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 26</value>
+  </data>
+  <data name="logoutBtn.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="logoutBtn.Text" xml:space="preserve">
+    <value>Đăng xuất</value>
+  </data>
+  <data name="&gt;&gt;logoutBtn.Name" xml:space="preserve">
+    <value>logoutBtn</value>
+  </data>
+  <data name="&gt;&gt;logoutBtn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;logoutBtn.Parent" xml:space="preserve">
+    <value>profileTab</value>
+  </data>
+  <data name="&gt;&gt;logoutBtn.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -986,7 +1274,7 @@ vượt quá (VND - Nhập 0 để tắt)</value>
     <value>251, 375</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>Kinsen</value>
+    <value>Kinsen </value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>MainWindow</value>

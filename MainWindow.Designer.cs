@@ -42,19 +42,24 @@
             spendingList = new ListBox();
             dateChooser = new DateTimePicker();
             preferencesTab = new TabPage();
-            groupBox3 = new GroupBox();
+            defaultNamePref = new GroupBox();
             label3 = new Label();
             defaultSpendingNameInput = new TextBox();
             label4 = new Label();
-            groupBox2 = new GroupBox();
+            limitSpendingPref = new GroupBox();
             label5 = new Label();
             spendingLimitInput = new NumericUpDown();
-            groupBox1 = new GroupBox();
-            autoLaunchTab = new RadioButton();
+            startupPref = new GroupBox();
+            launchAddSpending = new RadioButton();
             label6 = new Label();
-            radioButton2 = new RadioButton();
+            launchHistory = new RadioButton();
             button1 = new Button();
             noticeLabel = new Label();
+            profileTab = new TabPage();
+            launchProfile = new RadioButton();
+            label7 = new Label();
+            profileNameLabel = new Label();
+            logoutBtn = new Button();
             label2 = new Label();
             label1 = new Label();
             appTabs.SuspendLayout();
@@ -62,10 +67,11 @@
             ((System.ComponentModel.ISupportInitialize)fundSpentInput).BeginInit();
             historyTab.SuspendLayout();
             preferencesTab.SuspendLayout();
-            groupBox3.SuspendLayout();
-            groupBox2.SuspendLayout();
+            defaultNamePref.SuspendLayout();
+            limitSpendingPref.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)spendingLimitInput).BeginInit();
-            groupBox1.SuspendLayout();
+            startupPref.SuspendLayout();
+            profileTab.SuspendLayout();
             SuspendLayout();
             // 
             // label2
@@ -82,8 +88,10 @@
             // 
             appTabs.Controls.Add(addFundTab);
             appTabs.Controls.Add(historyTab);
+            appTabs.Controls.Add(profileTab);
             appTabs.Controls.Add(preferencesTab);
             resources.ApplyResources(appTabs, "appTabs");
+            appTabs.Multiline = true;
             appTabs.Name = "appTabs";
             appTabs.SelectedIndex = 0;
             // 
@@ -123,6 +131,7 @@
             // dateSelector
             // 
             resources.ApplyResources(dateSelector, "dateSelector");
+            dateSelector.MaxSelectionCount = 1;
             dateSelector.Name = "dateSelector";
             dateSelector.DateChanged += dateSelector_DateChanged;
             // 
@@ -154,22 +163,22 @@
             // 
             // preferencesTab
             // 
-            preferencesTab.Controls.Add(groupBox3);
-            preferencesTab.Controls.Add(groupBox2);
-            preferencesTab.Controls.Add(groupBox1);
+            preferencesTab.Controls.Add(defaultNamePref);
+            preferencesTab.Controls.Add(limitSpendingPref);
+            preferencesTab.Controls.Add(startupPref);
             preferencesTab.Controls.Add(button1);
             resources.ApplyResources(preferencesTab, "preferencesTab");
             preferencesTab.Name = "preferencesTab";
             preferencesTab.UseVisualStyleBackColor = true;
             // 
-            // groupBox3
+            // defaultNamePref
             // 
-            groupBox3.Controls.Add(label3);
-            groupBox3.Controls.Add(defaultSpendingNameInput);
-            groupBox3.Controls.Add(label4);
-            resources.ApplyResources(groupBox3, "groupBox3");
-            groupBox3.Name = "groupBox3";
-            groupBox3.TabStop = false;
+            defaultNamePref.Controls.Add(label3);
+            defaultNamePref.Controls.Add(defaultSpendingNameInput);
+            defaultNamePref.Controls.Add(label4);
+            resources.ApplyResources(defaultNamePref, "defaultNamePref");
+            defaultNamePref.Name = "defaultNamePref";
+            defaultNamePref.TabStop = false;
             // 
             // label3
             // 
@@ -186,13 +195,13 @@
             resources.ApplyResources(label4, "label4");
             label4.Name = "label4";
             // 
-            // groupBox2
+            // limitSpendingPref
             // 
-            groupBox2.Controls.Add(label5);
-            groupBox2.Controls.Add(spendingLimitInput);
-            resources.ApplyResources(groupBox2, "groupBox2");
-            groupBox2.Name = "groupBox2";
-            groupBox2.TabStop = false;
+            limitSpendingPref.Controls.Add(label5);
+            limitSpendingPref.Controls.Add(spendingLimitInput);
+            resources.ApplyResources(limitSpendingPref, "limitSpendingPref");
+            limitSpendingPref.Name = "limitSpendingPref";
+            limitSpendingPref.TabStop = false;
             // 
             // label5
             // 
@@ -206,34 +215,34 @@
             spendingLimitInput.Maximum = new decimal(new int[] { 1215752191, 23, 0, 0 });
             spendingLimitInput.Name = "spendingLimitInput";
             // 
-            // groupBox1
+            // startupPref
             // 
-            groupBox1.Controls.Add(autoLaunchTab);
-            groupBox1.Controls.Add(label6);
-            groupBox1.Controls.Add(radioButton2);
-            resources.ApplyResources(groupBox1, "groupBox1");
-            groupBox1.Name = "groupBox1";
-            groupBox1.TabStop = false;
-            groupBox1.Enter += groupBox1_Enter;
+            startupPref.Controls.Add(launchProfile);
+            startupPref.Controls.Add(launchAddSpending);
+            startupPref.Controls.Add(label6);
+            startupPref.Controls.Add(launchHistory);
+            resources.ApplyResources(startupPref, "startupPref");
+            startupPref.Name = "startupPref";
+            startupPref.TabStop = false;
             // 
-            // autoLaunchTab
+            // launchAddSpending
             // 
-            resources.ApplyResources(autoLaunchTab, "autoLaunchTab");
-            autoLaunchTab.Name = "autoLaunchTab";
-            autoLaunchTab.TabStop = true;
-            autoLaunchTab.UseVisualStyleBackColor = true;
+            resources.ApplyResources(launchAddSpending, "launchAddSpending");
+            launchAddSpending.Name = "launchAddSpending";
+            launchAddSpending.TabStop = true;
+            launchAddSpending.UseVisualStyleBackColor = true;
             // 
             // label6
             // 
             resources.ApplyResources(label6, "label6");
             label6.Name = "label6";
             // 
-            // radioButton2
+            // launchHistory
             // 
-            resources.ApplyResources(radioButton2, "radioButton2");
-            radioButton2.Name = "radioButton2";
-            radioButton2.TabStop = true;
-            radioButton2.UseVisualStyleBackColor = true;
+            resources.ApplyResources(launchHistory, "launchHistory");
+            launchHistory.Name = "launchHistory";
+            launchHistory.TabStop = true;
+            launchHistory.UseVisualStyleBackColor = true;
             // 
             // button1
             // 
@@ -246,6 +255,38 @@
             resources.ApplyResources(noticeLabel, "noticeLabel");
             noticeLabel.Name = "noticeLabel";
             // 
+            // profileTab
+            // 
+            profileTab.Controls.Add(logoutBtn);
+            profileTab.Controls.Add(profileNameLabel);
+            profileTab.Controls.Add(label7);
+            resources.ApplyResources(profileTab, "profileTab");
+            profileTab.Name = "profileTab";
+            profileTab.UseVisualStyleBackColor = true;
+            // 
+            // launchProfile
+            // 
+            resources.ApplyResources(launchProfile, "launchProfile");
+            launchProfile.Name = "launchProfile";
+            launchProfile.TabStop = true;
+            launchProfile.UseVisualStyleBackColor = true;
+            // 
+            // label7
+            // 
+            resources.ApplyResources(label7, "label7");
+            label7.Name = "label7";
+            // 
+            // profileNameLabel
+            // 
+            resources.ApplyResources(profileNameLabel, "profileNameLabel");
+            profileNameLabel.Name = "profileNameLabel";
+            // 
+            // logoutBtn
+            // 
+            resources.ApplyResources(logoutBtn, "logoutBtn");
+            logoutBtn.Name = "logoutBtn";
+            logoutBtn.UseVisualStyleBackColor = true;
+            // 
             // MainWindow
             // 
             resources.ApplyResources(this, "$this");
@@ -253,24 +294,26 @@
             CausesValidation = false;
             Controls.Add(noticeLabel);
             Controls.Add(appTabs);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
             MaximizeBox = false;
             MinimizeBox = false;
             Name = "MainWindow";
             ShowIcon = false;
-            Load += Form1_Load;
             appTabs.ResumeLayout(false);
             addFundTab.ResumeLayout(false);
             addFundTab.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)fundSpentInput).EndInit();
             historyTab.ResumeLayout(false);
             preferencesTab.ResumeLayout(false);
-            groupBox3.ResumeLayout(false);
-            groupBox3.PerformLayout();
-            groupBox2.ResumeLayout(false);
-            groupBox2.PerformLayout();
+            defaultNamePref.ResumeLayout(false);
+            defaultNamePref.PerformLayout();
+            limitSpendingPref.ResumeLayout(false);
+            limitSpendingPref.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)spendingLimitInput).EndInit();
-            groupBox1.ResumeLayout(false);
-            groupBox1.PerformLayout();
+            startupPref.ResumeLayout(false);
+            startupPref.PerformLayout();
+            profileTab.ResumeLayout(false);
+            profileTab.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -295,12 +338,17 @@
         private TextBox defaultSpendingNameInput;
         private NumericUpDown spendingLimitInput;
         private Label label5;
-        private RadioButton radioButton2;
-        private RadioButton autoLaunchTab;
+        private RadioButton launchHistory;
+        private RadioButton launchAddSpending;
         private Label label6;
         private Button button1;
-        private GroupBox groupBox1;
-        private GroupBox groupBox3;
-        private GroupBox groupBox2;
+        private GroupBox startupPref;
+        private GroupBox defaultNamePref;
+        private GroupBox limitSpendingPref;
+        private TabPage profileTab;
+        private RadioButton launchProfile;
+        private Button logoutBtn;
+        private Label profileNameLabel;
+        private Label label7;
     }
 }

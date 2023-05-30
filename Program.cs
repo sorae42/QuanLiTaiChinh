@@ -7,7 +7,7 @@ namespace QuanLiTaiChinh
         {
             System.Diagnostics.Debug.WriteLine("Initializing Kinsen...");
             ApplicationConfiguration.Initialize();
-            Application.Run(new MainWindow());
+            Application.Run(new ProfileLogin());
         }
     }
 }
