@@ -5,18 +5,11 @@ namespace QuanLiTaiChinh.Utils
 {
     public class DataProvider
     {
-        private static DataProvider? instance;
-        private readonly string ConnectionString = @"Data Source=DESKTOP-1MUEJCA\SQLEXPRESS;Initial Catalog=KinsenDB;Integrated Security=True";
+        private static readonly string ConnectionString = @"Data Source=DESKTOP-1MUEJCA\SQLEXPRESS;Initial Catalog=KinsenDB;Integrated Security=True";
 
         public DataProvider() { }
 
-        public static DataProvider Instance
-        {
-            get { if (instance == null) instance = new DataProvider(); return DataProvider.instance; }
-            private set { DataProvider.instance = value; }
-        }
-
-        public DataTable? ExecuteReader(string query, params object[] parameter)
+        public static DataTable? ExecuteReader(string query, params object[] parameter)
         {
             try
             {
@@ -50,7 +43,7 @@ namespace QuanLiTaiChinh.Utils
             }
         }
 
-        public object? ExecuteScalar(string query, params object[] parameter)
+        public static object? ExecuteScalar(string query, params object[] parameter)
         {
             try
             {
@@ -85,7 +78,7 @@ namespace QuanLiTaiChinh.Utils
             }
         }
 
-        public int? ExecuteNonQuery(string query, params object[] parameter)
+        public static int? ExecuteNonQuery(string query, params object[] parameter)
         {
             try
             {

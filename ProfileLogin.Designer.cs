@@ -28,11 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            Label label3;
             label1 = new Label();
             label2 = new Label();
             usernameInput = new TextBox();
             passwordInput = new TextBox();
             submitBtn = new Button();
+            label3 = new Label();
             SuspendLayout();
             // 
             // label1
@@ -81,11 +83,22 @@
             submitBtn.UseVisualStyleBackColor = true;
             submitBtn.Click += submitBtn_Click;
             // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Segoe UI", 8.25F, FontStyle.Italic, GraphicsUnit.Point);
+            label3.Location = new Point(12, 106);
+            label3.Name = "label3";
+            label3.Size = new Size(130, 39);
+            label3.TabIndex = 5;
+            label3.Text = "Bạn có thể đăng ký hồ sơ\r\nmới nếu bạn không có\r\nbằng cách bấm Xác nhận.";
+            // 
             // ProfileLogin
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(267, 157);
+            Controls.Add(label3);
             Controls.Add(submitBtn);
             Controls.Add(passwordInput);
             Controls.Add(usernameInput);

@@ -31,6 +31,11 @@
             Label label2;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainWindow));
             Label label1;
+            Label label7;
+            Label label3;
+            Label label4;
+            Label label5;
+            Label label6;
             appTabs = new TabControl();
             addFundTab = new TabPage();
             fundSpentInput = new NumericUpDown();
@@ -41,37 +46,37 @@
             deleteBtn = new Button();
             spendingList = new ListBox();
             dateChooser = new DateTimePicker();
+            profileTab = new TabPage();
+            logoutBtn = new Button();
+            profileNameLabel = new Label();
             preferencesTab = new TabPage();
             defaultNamePref = new GroupBox();
-            label3 = new Label();
             defaultSpendingNameInput = new TextBox();
-            label4 = new Label();
             limitSpendingPref = new GroupBox();
-            label5 = new Label();
             spendingLimitInput = new NumericUpDown();
             startupPref = new GroupBox();
+            launchProfile = new RadioButton();
             launchAddSpending = new RadioButton();
-            label6 = new Label();
             launchHistory = new RadioButton();
             button1 = new Button();
             noticeLabel = new Label();
-            profileTab = new TabPage();
-            launchProfile = new RadioButton();
-            label7 = new Label();
-            profileNameLabel = new Label();
-            logoutBtn = new Button();
             label2 = new Label();
             label1 = new Label();
+            label7 = new Label();
+            label3 = new Label();
+            label4 = new Label();
+            label5 = new Label();
+            label6 = new Label();
             appTabs.SuspendLayout();
             addFundTab.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)fundSpentInput).BeginInit();
             historyTab.SuspendLayout();
+            profileTab.SuspendLayout();
             preferencesTab.SuspendLayout();
             defaultNamePref.SuspendLayout();
             limitSpendingPref.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)spendingLimitInput).BeginInit();
             startupPref.SuspendLayout();
-            profileTab.SuspendLayout();
             SuspendLayout();
             // 
             // label2
@@ -83,6 +88,31 @@
             // 
             resources.ApplyResources(label1, "label1");
             label1.Name = "label1";
+            // 
+            // label7
+            // 
+            resources.ApplyResources(label7, "label7");
+            label7.Name = "label7";
+            // 
+            // label3
+            // 
+            resources.ApplyResources(label3, "label3");
+            label3.Name = "label3";
+            // 
+            // label4
+            // 
+            resources.ApplyResources(label4, "label4");
+            label4.Name = "label4";
+            // 
+            // label5
+            // 
+            resources.ApplyResources(label5, "label5");
+            label5.Name = "label5";
+            // 
+            // label6
+            // 
+            resources.ApplyResources(label6, "label6");
+            label6.Name = "label6";
             // 
             // appTabs
             // 
@@ -161,6 +191,26 @@
             resources.ApplyResources(dateChooser, "dateChooser");
             dateChooser.Name = "dateChooser";
             // 
+            // profileTab
+            // 
+            profileTab.Controls.Add(logoutBtn);
+            profileTab.Controls.Add(profileNameLabel);
+            profileTab.Controls.Add(label7);
+            resources.ApplyResources(profileTab, "profileTab");
+            profileTab.Name = "profileTab";
+            profileTab.UseVisualStyleBackColor = true;
+            // 
+            // logoutBtn
+            // 
+            resources.ApplyResources(logoutBtn, "logoutBtn");
+            logoutBtn.Name = "logoutBtn";
+            logoutBtn.UseVisualStyleBackColor = true;
+            // 
+            // profileNameLabel
+            // 
+            resources.ApplyResources(profileNameLabel, "profileNameLabel");
+            profileNameLabel.Name = "profileNameLabel";
+            // 
             // preferencesTab
             // 
             preferencesTab.Controls.Add(defaultNamePref);
@@ -180,20 +230,10 @@
             defaultNamePref.Name = "defaultNamePref";
             defaultNamePref.TabStop = false;
             // 
-            // label3
-            // 
-            resources.ApplyResources(label3, "label3");
-            label3.Name = "label3";
-            // 
             // defaultSpendingNameInput
             // 
             resources.ApplyResources(defaultSpendingNameInput, "defaultSpendingNameInput");
             defaultSpendingNameInput.Name = "defaultSpendingNameInput";
-            // 
-            // label4
-            // 
-            resources.ApplyResources(label4, "label4");
-            label4.Name = "label4";
             // 
             // limitSpendingPref
             // 
@@ -202,11 +242,6 @@
             resources.ApplyResources(limitSpendingPref, "limitSpendingPref");
             limitSpendingPref.Name = "limitSpendingPref";
             limitSpendingPref.TabStop = false;
-            // 
-            // label5
-            // 
-            resources.ApplyResources(label5, "label5");
-            label5.Name = "label5";
             // 
             // spendingLimitInput
             // 
@@ -225,17 +260,19 @@
             startupPref.Name = "startupPref";
             startupPref.TabStop = false;
             // 
+            // launchProfile
+            // 
+            resources.ApplyResources(launchProfile, "launchProfile");
+            launchProfile.Name = "launchProfile";
+            launchProfile.TabStop = true;
+            launchProfile.UseVisualStyleBackColor = true;
+            // 
             // launchAddSpending
             // 
             resources.ApplyResources(launchAddSpending, "launchAddSpending");
             launchAddSpending.Name = "launchAddSpending";
             launchAddSpending.TabStop = true;
             launchAddSpending.UseVisualStyleBackColor = true;
-            // 
-            // label6
-            // 
-            resources.ApplyResources(label6, "label6");
-            label6.Name = "label6";
             // 
             // launchHistory
             // 
@@ -255,38 +292,6 @@
             resources.ApplyResources(noticeLabel, "noticeLabel");
             noticeLabel.Name = "noticeLabel";
             // 
-            // profileTab
-            // 
-            profileTab.Controls.Add(logoutBtn);
-            profileTab.Controls.Add(profileNameLabel);
-            profileTab.Controls.Add(label7);
-            resources.ApplyResources(profileTab, "profileTab");
-            profileTab.Name = "profileTab";
-            profileTab.UseVisualStyleBackColor = true;
-            // 
-            // launchProfile
-            // 
-            resources.ApplyResources(launchProfile, "launchProfile");
-            launchProfile.Name = "launchProfile";
-            launchProfile.TabStop = true;
-            launchProfile.UseVisualStyleBackColor = true;
-            // 
-            // label7
-            // 
-            resources.ApplyResources(label7, "label7");
-            label7.Name = "label7";
-            // 
-            // profileNameLabel
-            // 
-            resources.ApplyResources(profileNameLabel, "profileNameLabel");
-            profileNameLabel.Name = "profileNameLabel";
-            // 
-            // logoutBtn
-            // 
-            resources.ApplyResources(logoutBtn, "logoutBtn");
-            logoutBtn.Name = "logoutBtn";
-            logoutBtn.UseVisualStyleBackColor = true;
-            // 
             // MainWindow
             // 
             resources.ApplyResources(this, "$this");
@@ -299,11 +304,14 @@
             MinimizeBox = false;
             Name = "MainWindow";
             ShowIcon = false;
+            Load += MainWindow_Load;
             appTabs.ResumeLayout(false);
             addFundTab.ResumeLayout(false);
             addFundTab.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)fundSpentInput).EndInit();
             historyTab.ResumeLayout(false);
+            profileTab.ResumeLayout(false);
+            profileTab.PerformLayout();
             preferencesTab.ResumeLayout(false);
             defaultNamePref.ResumeLayout(false);
             defaultNamePref.PerformLayout();
@@ -312,8 +320,6 @@
             ((System.ComponentModel.ISupportInitialize)spendingLimitInput).EndInit();
             startupPref.ResumeLayout(false);
             startupPref.PerformLayout();
-            profileTab.ResumeLayout(false);
-            profileTab.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -324,8 +330,6 @@
         private TabPage historyTab;
         private MonthCalendar dateSelector;
         private TextBox fundingNameInput;
-        private Label label1;
-        private Label label2;
         private Button addSpendingBtn;
         private Button deleteBtn;
         private ListBox spendingList;
@@ -333,14 +337,10 @@
         private NumericUpDown fundSpentInput;
         private Label noticeLabel;
         private TabPage preferencesTab;
-        private Label label3;
-        private Label label4;
         private TextBox defaultSpendingNameInput;
         private NumericUpDown spendingLimitInput;
-        private Label label5;
         private RadioButton launchHistory;
         private RadioButton launchAddSpending;
-        private Label label6;
         private Button button1;
         private GroupBox startupPref;
         private GroupBox defaultNamePref;
