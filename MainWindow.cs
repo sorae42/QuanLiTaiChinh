@@ -8,11 +8,6 @@ namespace QuanLiTaiChinh
     {
         private int profileID;
 
-        private string username;
-        private string defaultName;
-        private int spendingLimit;
-        private int startupTab;
-
         public MainWindow(int id)
         {
             profileID = id;
@@ -31,19 +26,36 @@ namespace QuanLiTaiChinh
         // Add Spending Tab
         private void addSpendingBtn_Click(object sender, EventArgs e)
         {
-            System.Diagnostics.Debug.WriteLine(dateSelector.SelectionStart.ToShortDateString());
-            System.Diagnostics.Debug.WriteLine(fundingNameInput.Text);
-            System.Diagnostics.Debug.WriteLine(fundSpentInput.Text);
+            if (fundingNameInput.Text == null || fundingNameInput.Text == "")
+                return;
 
-            // TODO: put values
-            //DataProvider.Instance.ExecuteNonQuery("INSERT INTO Spendings (spendName, spendDate, spendAmount, spendUser)", Name, dateChooser, amount, userID);
-
-            noticeLabel.Text = "Đã thêm thành công!!";
+            if (Spending.add(fundingNameInput.Text, (int)fundSpentInput.Value, dateSelector.SelectionStart.ToShortDateString(), profileID) > 0)
+            {
+                noticeLabel.Text = "Đã thêm thành công!!";
+                MessageBox.Show("Đã thêm thành công!!");
+            }
         }
 
-        private void dateSelector_DateChanged(object sender, DateRangeEventArgs e)
+        private void dateChooser_ValueChanged(object sender, EventArgs e)
         {
+            string dateChosen = dateChooser.Value.ToShortDateString();
+            System.Diagnostics.Debug.WriteLine("[INFO] Attempt GET " + dateChosen);
+            DataTable? result = Spending.getAll(profileID, dateChosen);
+            spendingList.Items.Clear();
 
+            if (result != null)
+            {
+                foreach (DataRow row in result.Rows)
+                {
+                    string? name = row["spendName"].ToString();
+                    string? amount = row["spendAmount"].ToString();
+                    string? id = row["spendId"].ToString();
+
+                    string[] dataresult = { id, name, amount };
+                    var listview = new ListViewItem(dataresult);
+                    spendingList.Items.Add(listview);
+                }
+            }
         }
     }
 }
