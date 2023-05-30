@@ -22,8 +22,8 @@ namespace QuanLiTaiChinh
             if (id != -1)
             {
                 MainWindow window = new MainWindow(id);
-                this.Hide();
                 window.Show();
+                this.Hide();
             }
         }
 
