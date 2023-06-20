@@ -5,7 +5,7 @@ namespace QuanLiTaiChinh.Utils
 {
     public class DataProvider
     {
-        private static readonly string ConnectionString = @"Data Source=DESKTOP-1MUEJCA\SQLEXPRESS;Initial Catalog=KinsenDB;Integrated Security=True";
+        private static readonly string ConnectionString = @"Data Source=localhost\SQLEXPRESS;Initial Catalog=KinsenDB;Integrated Security=True";
 
         public DataProvider() { }
 
