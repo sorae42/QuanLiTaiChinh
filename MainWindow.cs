@@ -25,7 +25,7 @@ namespace QuanLiTaiChinh
 
         private void MainWindow_FormClosing(object sender, FormClosingEventArgs e)
         {
-            this.Close();
+            
         }
 
         // Add Spending Tab
