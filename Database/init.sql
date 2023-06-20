@@ -8,14 +8,17 @@ CREATE TABLE Profiles (
 	profilePassword VARCHAR(50),
 
 	-- for the settings tab
-	profilePrefDefaultName NVARCHAR(420) DEFAULT 'Mua hàng',
+	profilePrefDefaultName NVARCHAR(100) DEFAULT 'Mua hàng',
 	profilePrefSpendingLimit INT NOT NULL DEFAULT 0,
 	profilePrefStartupTab TINYINT NOT NULL DEFAULT 1, -- default to add new transaction
+
+	-- some permission for the admin panel
+	isAdmin BIT NOT NULL DEFAULT 0
 );
 
 CREATE TABLE Spendings (
 	spendId INT IDENTITY(1, 1) PRIMARY KEY NOT NULL,
-	spendName NVARCHAR(420) NOT NULL,
+	spendName NVARCHAR(100) NOT NULL,
 	spendDate DATE NOT NULL DEFAULT CURRENT_TIMESTAMP,
 	spendAmount INT NOT NULL,
 	spendUser INT NOT NULL,
@@ -24,7 +27,4 @@ CREATE TABLE Spendings (
 );
 
 -- Demo profiles (You can make a new profile in the Kinsen app)
-INSERT INTO Profiles (profileName, profilePassword) VALUES ('Sora', 'DangLeAnh');
-
--- Demo transaction
-INSERT INTO Spendings (spendName, spendAmount, spendUser) VALUES ('Mua thức ăn', 100000, 1);
+INSERT INTO Profiles (profileName, profilePassword, isAdmin) VALUES ('admin', 'admin', 1);
