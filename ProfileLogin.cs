@@ -57,7 +57,7 @@ namespace QuanLiTaiChinh
             {
                 case 0:
                     submitBtn.Text = "Đợi...";
-                    submitBtn.Enabled = false; 
+                    submitBtn.Enabled = false;
                     break;
                 case 1:
                     submitBtn.Text = "Xác nhận";

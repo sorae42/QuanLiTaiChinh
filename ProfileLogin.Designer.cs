@@ -80,7 +80,7 @@
             submitBtn.Location = new Point(297, 237);
             submitBtn.Margin = new Padding(6);
             submitBtn.Name = "submitBtn";
-            submitBtn.Size = new Size(176, 73);
+            submitBtn.Size = new Size(176, 50);
             submitBtn.TabIndex = 4;
             submitBtn.Text = "Xác nhận";
             submitBtn.UseVisualStyleBackColor = true;
@@ -90,7 +90,7 @@
             // 
             AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(496, 335);
+            ClientSize = new Size(496, 304);
             Controls.Add(submitBtn);
             Controls.Add(passwordInput);
             Controls.Add(usernameInput);
