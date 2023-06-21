@@ -20,6 +20,11 @@ namespace QuanLiTaiChinh
             InitializeComponent();
         }
 
+        private void ChangeProfileName_Load(object sender, EventArgs e)
+        {
+            nameInput.Text = ProfileEditHandler.getName(profileId);
+        }
+
         private void changeBtn_Click(object sender, EventArgs e)
         {
             if (ProfileEditHandler.EditName(profileId, nameInput.Text))
@@ -28,5 +33,6 @@ namespace QuanLiTaiChinh
                 this.Close();
             }
         }
+
     }
 }

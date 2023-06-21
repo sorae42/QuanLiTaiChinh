@@ -87,6 +87,7 @@
             ShowInTaskbar = false;
             StartPosition = FormStartPosition.CenterParent;
             Text = "Đổi tên hồ sơ";
+            Load += ChangeProfileName_Load;
             ResumeLayout(false);
             PerformLayout();
         }
