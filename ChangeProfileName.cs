@@ -22,7 +22,7 @@ namespace QuanLiTaiChinh
 
         private void ChangeProfileName_Load(object sender, EventArgs e)
         {
-            nameInput.Text = ProfileEditHandler.getName(profileId);
+            nameInput.Text = Profile.GetName(profileId);
         }
 
         private void changeBtn_Click(object sender, EventArgs e)
