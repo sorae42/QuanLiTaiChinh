@@ -10,7 +10,7 @@ CREATE TABLE Profiles (
 	-- for the settings tab
 	profilePrefDefaultName NVARCHAR(100) DEFAULT 'Mua hàng',
 	profilePrefSpendingLimit INT NOT NULL DEFAULT 0,
-	profilePrefStartupTab TINYINT NOT NULL DEFAULT 1, -- default to add new transaction
+	profilePrefStartupTab TINYINT NOT NULL DEFAULT 0, -- default to add new transaction
 
 	-- some permission for the admin panel
 	isAdmin BIT NOT NULL DEFAULT 0

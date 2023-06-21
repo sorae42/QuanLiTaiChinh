@@ -21,19 +21,9 @@ namespace QuanLiTaiChinh.Models
             return "Guest"; // should never returned but the intellicode needs to shut up
         }
 
-        public static object? GetPrefs(int profileID) 
+        public static DataTable GetPrefs(int profileID) 
         {
-            DataTable? result = DataProvider.ExecuteReader("SELECT profilePrefDefaultName, profilePrefSpendingLimit, profilePrefStartupTab FROM Profiles WHERE profileId = @id", profileID);
-
-            if (result != null)
-            {
-                foreach (DataRow row in result.Rows)
-                {
-                    return row;
-                }
-            }
-
-            return null;
+            return DataProvider.ExecuteReader("SELECT profilePrefDefaultName, profilePrefSpendingLimit, profilePrefStartupTab FROM Profiles WHERE profileId = @id", profileID);
         }
 
     }

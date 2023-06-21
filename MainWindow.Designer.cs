@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             Label label2;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainWindow));
             Label label1;
@@ -48,10 +49,20 @@
             spendAmount = new ColumnHeader();
             dateChooser = new DateTimePicker();
             profileTab = new TabPage();
+            startupTabContainer = new GroupBox();
+            startupOptions = new ComboBox();
+            label6 = new Label();
+            groupBox2 = new GroupBox();
+            saveLimitBtn = new Button();
+            label5 = new Label();
+            fundLimitInput = new NumericUpDown();
+            label4 = new Label();
+            groupBox1 = new GroupBox();
             changePasswordBtn = new Button();
-            changeProfileNameBtn = new Button();
             profileNameLabel = new Label();
+            changeProfileNameBtn = new Button();
             noticeLabel = new Label();
+            overLimitTooltip = new ToolTip(components);
             label2 = new Label();
             label1 = new Label();
             label7 = new Label();
@@ -60,6 +71,10 @@
             ((System.ComponentModel.ISupportInitialize)fundSpentInput).BeginInit();
             historyTab.SuspendLayout();
             profileTab.SuspendLayout();
+            startupTabContainer.SuspendLayout();
+            groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)fundLimitInput).BeginInit();
+            groupBox1.SuspendLayout();
             SuspendLayout();
             // 
             // label2
@@ -187,13 +202,78 @@
             // 
             // profileTab
             // 
-            profileTab.Controls.Add(changePasswordBtn);
-            profileTab.Controls.Add(changeProfileNameBtn);
-            profileTab.Controls.Add(profileNameLabel);
-            profileTab.Controls.Add(label7);
+            profileTab.Controls.Add(startupTabContainer);
+            profileTab.Controls.Add(groupBox2);
+            profileTab.Controls.Add(groupBox1);
             resources.ApplyResources(profileTab, "profileTab");
             profileTab.Name = "profileTab";
             profileTab.UseVisualStyleBackColor = true;
+            // 
+            // startupTabContainer
+            // 
+            startupTabContainer.Controls.Add(startupOptions);
+            startupTabContainer.Controls.Add(label6);
+            resources.ApplyResources(startupTabContainer, "startupTabContainer");
+            startupTabContainer.Name = "startupTabContainer";
+            startupTabContainer.TabStop = false;
+            // 
+            // startupOptions
+            // 
+            startupOptions.DropDownStyle = ComboBoxStyle.DropDownList;
+            startupOptions.FormattingEnabled = true;
+            startupOptions.Items.AddRange(new object[] { resources.GetString("startupOptions.Items"), resources.GetString("startupOptions.Items1") });
+            resources.ApplyResources(startupOptions, "startupOptions");
+            startupOptions.Name = "startupOptions";
+            startupOptions.SelectedIndexChanged += startupOptions_SelectedIndexChanged;
+            // 
+            // label6
+            // 
+            resources.ApplyResources(label6, "label6");
+            label6.Name = "label6";
+            // 
+            // groupBox2
+            // 
+            groupBox2.Controls.Add(saveLimitBtn);
+            groupBox2.Controls.Add(label5);
+            groupBox2.Controls.Add(fundLimitInput);
+            groupBox2.Controls.Add(label4);
+            resources.ApplyResources(groupBox2, "groupBox2");
+            groupBox2.Name = "groupBox2";
+            groupBox2.TabStop = false;
+            // 
+            // saveLimitBtn
+            // 
+            resources.ApplyResources(saveLimitBtn, "saveLimitBtn");
+            saveLimitBtn.Name = "saveLimitBtn";
+            saveLimitBtn.UseVisualStyleBackColor = true;
+            saveLimitBtn.Click += saveLimitBtn_Click;
+            // 
+            // label5
+            // 
+            resources.ApplyResources(label5, "label5");
+            label5.Name = "label5";
+            // 
+            // fundLimitInput
+            // 
+            fundLimitInput.Increment = new decimal(new int[] { 1000, 0, 0, 0 });
+            resources.ApplyResources(fundLimitInput, "fundLimitInput");
+            fundLimitInput.Maximum = new decimal(new int[] { 1215752191, 23, 0, 0 });
+            fundLimitInput.Name = "fundLimitInput";
+            // 
+            // label4
+            // 
+            resources.ApplyResources(label4, "label4");
+            label4.Name = "label4";
+            // 
+            // groupBox1
+            // 
+            groupBox1.Controls.Add(label7);
+            groupBox1.Controls.Add(changePasswordBtn);
+            groupBox1.Controls.Add(profileNameLabel);
+            groupBox1.Controls.Add(changeProfileNameBtn);
+            resources.ApplyResources(groupBox1, "groupBox1");
+            groupBox1.Name = "groupBox1";
+            groupBox1.TabStop = false;
             // 
             // changePasswordBtn
             // 
@@ -202,6 +282,11 @@
             changePasswordBtn.UseVisualStyleBackColor = true;
             changePasswordBtn.Click += changePasswordBtn_Click;
             // 
+            // profileNameLabel
+            // 
+            resources.ApplyResources(profileNameLabel, "profileNameLabel");
+            profileNameLabel.Name = "profileNameLabel";
+            // 
             // changeProfileNameBtn
             // 
             resources.ApplyResources(changeProfileNameBtn, "changeProfileNameBtn");
@@ -209,15 +294,16 @@
             changeProfileNameBtn.UseVisualStyleBackColor = true;
             changeProfileNameBtn.Click += changeProfileNameBtn_Click;
             // 
-            // profileNameLabel
-            // 
-            resources.ApplyResources(profileNameLabel, "profileNameLabel");
-            profileNameLabel.Name = "profileNameLabel";
-            // 
             // noticeLabel
             // 
             resources.ApplyResources(noticeLabel, "noticeLabel");
             noticeLabel.Name = "noticeLabel";
+            // 
+            // overLimitTooltip
+            // 
+            overLimitTooltip.IsBalloon = true;
+            overLimitTooltip.ToolTipIcon = ToolTipIcon.Warning;
+            overLimitTooltip.ToolTipTitle = "Lưu ý!";
             // 
             // MainWindow
             // 
@@ -240,7 +326,13 @@
             historyTab.ResumeLayout(false);
             historyTab.PerformLayout();
             profileTab.ResumeLayout(false);
-            profileTab.PerformLayout();
+            startupTabContainer.ResumeLayout(false);
+            startupTabContainer.PerformLayout();
+            groupBox2.ResumeLayout(false);
+            groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)fundLimitInput).EndInit();
+            groupBox1.ResumeLayout(false);
+            groupBox1.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -267,5 +359,15 @@
         private Label spendingTotal;
         private Label label3;
         private Button deleteBtn;
+        private GroupBox groupBox2;
+        private Label label4;
+        private GroupBox groupBox1;
+        private Label label5;
+        private NumericUpDown fundLimitInput;
+        private GroupBox startupTabContainer;
+        private Label label6;
+        private Button saveLimitBtn;
+        private ToolTip overLimitTooltip;
+        private ComboBox startupOptions;
     }
 }

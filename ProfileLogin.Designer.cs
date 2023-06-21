@@ -41,9 +41,9 @@
             label1.Location = new Point(22, 19);
             label1.Margin = new Padding(6, 0, 6, 0);
             label1.Name = "label1";
-            label1.Size = new Size(184, 32);
+            label1.Size = new Size(118, 32);
             label1.TabIndex = 0;
-            label1.Text = "Tên người dùng";
+            label1.Text = "Tên hồ sơ";
             // 
             // label2
             // 
