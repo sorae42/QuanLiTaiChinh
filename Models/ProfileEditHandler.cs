@@ -13,7 +13,7 @@ namespace QuanLiTaiChinh.Models
 
         public static string getName(int profileId)
         {
-            return DataProvider.ExecuteScalar("SELECT profileName FROM Profiles WHERE profileId = @id", profileId);
+            return DataProvider.ExecuteScalar("SELECT profileName FROM Profiles WHERE profileId = @id", profileId).ToString();
         }
 
         public static bool EditName(int id, string name)
