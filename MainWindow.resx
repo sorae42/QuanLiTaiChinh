@@ -297,32 +297,8 @@
   <data name="&gt;&gt;addFundTab.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="editBtn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>17, 659</value>
-  </data>
-  <data name="editBtn.Size" type="System.Drawing.Size, System.Drawing">
-    <value>191, 46</value>
-  </data>
-  <data name="editBtn.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="editBtn.Text" xml:space="preserve">
-    <value>Sửa</value>
-  </data>
-  <data name="&gt;&gt;editBtn.Name" xml:space="preserve">
-    <value>editBtn</value>
-  </data>
-  <data name="&gt;&gt;editBtn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;editBtn.Parent" xml:space="preserve">
-    <value>historyTab</value>
-  </data>
-  <data name="&gt;&gt;editBtn.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
   <data name="deleteBtn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>234, 659</value>
+    <value>234, 656</value>
   </data>
   <data name="deleteBtn.Size" type="System.Drawing.Size, System.Drawing">
     <value>201, 46</value>
@@ -343,7 +319,7 @@
     <value>historyTab</value>
   </data>
   <data name="&gt;&gt;deleteBtn.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>0</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="spendingTotal.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
@@ -377,7 +353,7 @@
     <value>historyTab</value>
   </data>
   <data name="&gt;&gt;spendingTotal.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>1</value>
   </data>
   <data name="label3.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -407,7 +383,7 @@
     <value>historyTab</value>
   </data>
   <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>2</value>
   </data>
   <data name="spendingList.Location" type="System.Drawing.Point, System.Drawing">
     <value>17, 75</value>
@@ -431,7 +407,7 @@
     <value>historyTab</value>
   </data>
   <data name="&gt;&gt;spendingList.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>3</value>
   </data>
   <data name="dateChooser.Location" type="System.Drawing.Point, System.Drawing">
     <value>17, 13</value>
@@ -455,7 +431,7 @@
     <value>historyTab</value>
   </data>
   <data name="&gt;&gt;dateChooser.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>4</value>
   </data>
   <data name="historyTab.Location" type="System.Drawing.Point, System.Drawing">
     <value>8, 46</value>

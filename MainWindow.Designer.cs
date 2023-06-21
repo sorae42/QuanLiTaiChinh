@@ -39,7 +39,6 @@
             fundingNameInput = new TextBox();
             dateSelector = new MonthCalendar();
             historyTab = new TabPage();
-            editBtn = new Button();
             deleteBtn = new Button();
             spendingTotal = new Label();
             label3 = new Label();
@@ -129,7 +128,6 @@
             // 
             // historyTab
             // 
-            historyTab.Controls.Add(editBtn);
             historyTab.Controls.Add(deleteBtn);
             historyTab.Controls.Add(spendingTotal);
             historyTab.Controls.Add(label3);
@@ -138,12 +136,6 @@
             resources.ApplyResources(historyTab, "historyTab");
             historyTab.Name = "historyTab";
             historyTab.UseVisualStyleBackColor = true;
-            // 
-            // editBtn
-            // 
-            resources.ApplyResources(editBtn, "editBtn");
-            editBtn.Name = "editBtn";
-            editBtn.UseVisualStyleBackColor = true;
             // 
             // deleteBtn
             // 
@@ -274,7 +266,6 @@
         private Button changePasswordBtn;
         private Label spendingTotal;
         private Label label3;
-        private Button editBtn;
         private Button deleteBtn;
     }
 }

@@ -72,12 +72,22 @@ namespace QuanLiTaiChinh
             window.ShowDialog();
         }
 
+        private void deleteBtn_Click(object sender, EventArgs e)
+        {
+            if (spendingList.SelectedItems.Count == 0)
+                return;
+
+            string recordID = spendingList.SelectedItems[0].Text;
+            if (MessageBox.Show("Xoá chi tiêu này?", "", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                if (Spending.delete(recordID) > 0) getRecords();
+            }
+        }
 
         private void getRecords()
         {
             int total = 0;
             string dateChosen = dateChooser.Value.ToShortDateString();
-            System.Diagnostics.Debug.WriteLine("[INFO] Attempt GET " + dateChosen);
             notify("Đang lấy dữ liệu...");
             DataTable? result = Spending.getAll(profileID, dateChosen);
             spendingList.Items.Clear();
@@ -106,12 +116,6 @@ namespace QuanLiTaiChinh
         private void notify(string message)
         {
             noticeLabel.Text = message;
-        }
-
-        private void deleteBtn_Click(object sender, EventArgs e)
-        {
-            string recordID = spendingList.SelectedItems[0].Text;
-            if (Spending.delete(recordID) > 0) getRecords(); 
         }
     }
 }
