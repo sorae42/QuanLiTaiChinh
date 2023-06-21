@@ -19,7 +19,7 @@ namespace QuanLiTaiChinh
             string username = usernameInput.Text;
             string password = passwordInput.Text;
 
-            if (username.Length > 0 || password.Length > 0)
+            if (username != "" && password != "")
             {
                 int id = ProcessLogin(username, password);
                 if (id != -1)

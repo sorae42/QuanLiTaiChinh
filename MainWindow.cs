@@ -39,8 +39,8 @@ namespace QuanLiTaiChinh
         // Add Spending Tab
         private void addSpendingBtn_Click(object sender, EventArgs e)
         {
-            string name = fundingNameInput.Text;
             int spent = (int)fundSpentInput.Value;
+            string name = fundingNameInput.Text;
             string selectedDate = dateSelector.SelectionStart.ToShortDateString();
 
             if (name == "")
