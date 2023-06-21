@@ -70,7 +70,7 @@
             passwordInput.Margin = new Padding(6);
             passwordInput.Name = "passwordInput";
             passwordInput.PasswordChar = '●';
-            passwordInput.PlaceholderText = "●●●●●●●●●";
+            passwordInput.PlaceholderText = "Mật khẩu";
             passwordInput.Size = new Size(448, 39);
             passwordInput.TabIndex = 3;
             passwordInput.UseSystemPasswordChar = true;
