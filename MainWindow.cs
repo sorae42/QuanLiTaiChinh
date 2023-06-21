@@ -1,6 +1,7 @@
 ﻿using System.Data;
 using QuanLiTaiChinh.Models;
 using QuanLiTaiChinh.Utils;
+using static System.ComponentModel.Design.ObjectSelectorEditor;
 
 namespace QuanLiTaiChinh
 {
@@ -38,11 +39,14 @@ namespace QuanLiTaiChinh
         // Add Spending Tab
         private void addSpendingBtn_Click(object sender, EventArgs e)
         {
-            
-            if (fundingNameInput.Text == null || fundingNameInput.Text == "")
+            string name = fundingNameInput.Text;
+            int spent = (int)fundSpentInput.Value;
+            string selectedDate = dateSelector.SelectionStart.ToShortDateString();
+
+            if (name == "")
                 return;
 
-            if (Spending.add(fundingNameInput.Text, (int)fundSpentInput.Value, dateSelector.SelectionStart.ToShortDateString(), profileID) > 0)
+            if (Spending.add(name, spent, selectedDate, profileID) > 0)
             {
                 notify("Đã thêm thành công!!");
                 MessageBox.Show("Đã thêm thành công!!");
