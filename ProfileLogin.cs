@@ -24,7 +24,7 @@ namespace QuanLiTaiChinh
             {
                 submitBtn_Status(0);
                 int id = ProcessLogin(username, password);
-                if (id != -1)
+                if (id >= 0)
                 {
                     MainWindow window = new MainWindow(id, this);
                     window.Show();
@@ -38,15 +38,19 @@ namespace QuanLiTaiChinh
         {
             int profileId = LoginHandler.Login(username, password);
 
-            if (profileId == -1)
+            if (profileId == -2)
             {
                 if (MessageBox.Show("Hồ sơ này không tồn tại. Bạn có muốn tạo hồ sơ mới không?", "", MessageBoxButtons.YesNo) == DialogResult.Yes)
                 {
                     LoginHandler.Register(username, password);
                     MessageBox.Show("Hồ sơ mới đã tạo thành công. Vui lòng đăng nhập bằng tên mới.");
-                    submitBtn_Status(1);
                 }
             }
+            else if (profileId == -1) 
+            {
+                MessageBox.Show("Sai mật khẩu!");
+            }
+            submitBtn_Status(1);
 
             return profileId;
         }

@@ -8,13 +8,14 @@ namespace QuanLiTaiChinh.Models
 
         public static int Login(string username, string password)
         {
-            System.Diagnostics.Debug.WriteLine("[INFO] Attempt to login!");
-            object? result = DataProvider.ExecuteScalar("SELECT profileId FROM Profiles WHERE profileName = @username AND profilePassword = @password", username, password);
+            object? result = DataProvider.ExecuteScalar("SELECT profileId FROM Profiles WHERE profileName = @username", username);
 
             if (result == null)
-                return -1;
+                return -2;
 
-            System.Diagnostics.Debug.WriteLine("[INFO] Logged in! User ID: " + result);
+            result = DataProvider.ExecuteScalar("SELECT profileId FROM Profiles WHERE profileName = @username AND profilePassword = @password", username, password);
+
+            if (result == null) return -1;
             return (int) result;
         }
 
