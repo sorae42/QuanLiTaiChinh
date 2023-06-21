@@ -1,11 +1,5 @@
-﻿using Microsoft.VisualBasic.ApplicationServices;
-using QuanLiTaiChinh.Utils;
-using System;
-using System.Collections.Generic;
+﻿using QuanLiTaiChinh.Utils;
 using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace QuanLiTaiChinh.Models
 {
@@ -21,7 +15,7 @@ namespace QuanLiTaiChinh.Models
             return "Guest"; // should never returned but the intellicode needs to shut up
         }
 
-        public static DataTable GetPrefs(int profileID) 
+        public static DataTable GetPrefs(int profileID)
         {
             return DataProvider.ExecuteReader("SELECT profilePrefDefaultName, profilePrefSpendingLimit, profilePrefStartupTab FROM Profiles WHERE profileId = @id", profileID);
         }

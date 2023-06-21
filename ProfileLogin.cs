@@ -46,7 +46,7 @@ namespace QuanLiTaiChinh
                     MessageBox.Show("Hồ sơ mới đã tạo thành công. Vui lòng đăng nhập bằng tên mới.");
                 }
             }
-            else if (profileId == -1) 
+            else if (profileId == -1)
             {
                 MessageBox.Show("Sai mật khẩu!");
             }

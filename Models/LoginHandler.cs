@@ -16,7 +16,7 @@ namespace QuanLiTaiChinh.Models
             result = DataProvider.ExecuteScalar("SELECT profileId FROM Profiles WHERE profileName = @username AND profilePassword = @password", username, password);
 
             if (result == null) return -1;
-            return (int) result;
+            return (int)result;
         }
 
         public static void Register(string username, string password)

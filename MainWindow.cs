@@ -1,8 +1,6 @@
-﻿using System.ComponentModel;
-using System.Data;
-using QuanLiTaiChinh.Models;
+﻿using QuanLiTaiChinh.Models;
 using QuanLiTaiChinh.Utils;
-using static System.ComponentModel.Design.ObjectSelectorEditor;
+using System.Data;
 
 namespace QuanLiTaiChinh
 {
