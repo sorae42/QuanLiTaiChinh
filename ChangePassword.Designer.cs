@@ -31,7 +31,6 @@
             label1 = new Label();
             passwordInput = new TextBox();
             changeBtn = new Button();
-            label2 = new Label();
             passwordConfirmInput = new TextBox();
             SuspendLayout();
             // 
@@ -64,16 +63,6 @@
             changeBtn.UseVisualStyleBackColor = true;
             changeBtn.Click += changeBtn_Click;
             // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 7.875F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.Location = new Point(501, -2);
-            label2.Name = "label2";
-            label2.Size = new Size(50, 30);
-            label2.TabIndex = 3;
-            label2.Text = "Hủy";
-            // 
             // passwordConfirmInput
             // 
             passwordConfirmInput.Location = new Point(21, 149);
@@ -90,7 +79,6 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(556, 301);
             Controls.Add(passwordConfirmInput);
-            Controls.Add(label2);
             Controls.Add(changeBtn);
             Controls.Add(passwordInput);
             Controls.Add(label1);
@@ -110,7 +98,6 @@
         private Label label1;
         private TextBox passwordInput;
         private Button changeBtn;
-        private Label label2;
         private TextBox passwordConfirmInput;
     }
 }
