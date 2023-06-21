@@ -126,10 +126,14 @@
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 231</value>
+    <value>17, 493</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="label2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 0, 6, 0</value>
   </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>108, 15</value>
+    <value>222, 32</value>
   </data>
   <data name="label2.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -156,10 +160,13 @@
     <value>True</value>
   </data>
   <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>8, 179</value>
+    <value>15, 382</value>
+  </data>
+  <data name="label1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 0, 6, 0</value>
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>67, 15</value>
+    <value>138, 32</value>
   </data>
   <data name="label1.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -186,10 +193,13 @@
     <value>True</value>
   </data>
   <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 9</value>
+    <value>17, 19</value>
+  </data>
+  <data name="label7.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 0, 6, 0</value>
   </data>
   <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>132, 15</value>
+    <value>270, 32</value>
   </data>
   <data name="label7.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -207,13 +217,16 @@
     <value>profileTab</value>
   </data>
   <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>3</value>
   </data>
   <data name="fundSpentInput.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 250</value>
+    <value>17, 533</value>
+  </data>
+  <data name="fundSpentInput.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 6, 6, 6</value>
   </data>
   <data name="fundSpentInput.Size" type="System.Drawing.Size, System.Drawing">
-    <value>227, 23</value>
+    <value>422, 39</value>
   </data>
   <data name="fundSpentInput.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -237,10 +250,13 @@
     <value>Segoe UI, 14.25pt, style=Bold</value>
   </data>
   <data name="addSpendingBtn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 283</value>
+    <value>17, 604</value>
+  </data>
+  <data name="addSpendingBtn.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 6, 6, 6</value>
   </data>
   <data name="addSpendingBtn.Size" type="System.Drawing.Size, System.Drawing">
-    <value>227, 43</value>
+    <value>422, 92</value>
   </data>
   <data name="addSpendingBtn.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -261,7 +277,10 @@
     <value>1</value>
   </data>
   <data name="fundingNameInput.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 197</value>
+    <value>17, 420</value>
+  </data>
+  <data name="fundingNameInput.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 6, 6, 6</value>
   </data>
   <data name="fundingNameInput.MaxLength" type="System.Int32, mscorlib">
     <value>256</value>
@@ -270,7 +289,7 @@
     <value>Đồ ăn, hàng hóa,...</value>
   </data>
   <data name="fundingNameInput.Size" type="System.Drawing.Size, System.Drawing">
-    <value>227, 23</value>
+    <value>418, 39</value>
   </data>
   <data name="fundingNameInput.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -295,7 +314,10 @@
     <value>Monday</value>
   </data>
   <data name="dateSelector.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 12</value>
+    <value>17, 26</value>
+  </data>
+  <data name="dateSelector.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>17, 19, 17, 19</value>
   </data>
   <data name="dateSelector.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -313,14 +335,16 @@
     <value>5</value>
   </data>
   <data name="addFundTab.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 24</value>
+    <value>8, 46</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="addFundTab.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 6, 6, 6</value>
+  </data>
   <data name="addFundTab.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
+    <value>6, 6, 6, 6</value>
   </data>
   <data name="addFundTab.Size" type="System.Drawing.Size, System.Drawing">
-    <value>246, 332</value>
+    <value>456, 714</value>
   </data>
   <data name="addFundTab.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -344,25 +368,28 @@
     <value>ID</value>
   </data>
   <data name="spendID.Width" type="System.Int32, mscorlib">
-    <value>24</value>
+    <value>42</value>
   </data>
   <data name="spendName.Text" xml:space="preserve">
     <value>Tên chi tiêu</value>
   </data>
   <data name="spendName.Width" type="System.Int32, mscorlib">
-    <value>120</value>
+    <value>240</value>
   </data>
   <data name="spendAmount.Text" xml:space="preserve">
     <value>Số tiền</value>
   </data>
   <data name="spendAmount.Width" type="System.Int32, mscorlib">
-    <value>100</value>
+    <value>120</value>
   </data>
   <data name="spendingList.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 35</value>
+    <value>17, 75</value>
+  </data>
+  <data name="spendingList.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 6, 6, 6</value>
   </data>
   <data name="spendingList.Size" type="System.Drawing.Size, System.Drawing">
-    <value>227, 291</value>
+    <value>418, 616</value>
   </data>
   <data name="spendingList.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -380,10 +407,13 @@
     <value>0</value>
   </data>
   <data name="dateChooser.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 6</value>
+    <value>17, 13</value>
+  </data>
+  <data name="dateChooser.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 6, 6, 6</value>
   </data>
   <data name="dateChooser.Size" type="System.Drawing.Size, System.Drawing">
-    <value>227, 23</value>
+    <value>418, 39</value>
   </data>
   <data name="dateChooser.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -401,13 +431,16 @@
     <value>1</value>
   </data>
   <data name="historyTab.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 24</value>
+    <value>8, 46</value>
+  </data>
+  <data name="historyTab.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 6, 6, 6</value>
   </data>
   <data name="historyTab.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
+    <value>6, 6, 6, 6</value>
   </data>
   <data name="historyTab.Size" type="System.Drawing.Size, System.Drawing">
-    <value>246, 332</value>
+    <value>456, 714</value>
   </data>
   <data name="historyTab.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -427,6 +460,54 @@
   <data name="&gt;&gt;historyTab.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="changePasswordBtn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>238, 123</value>
+  </data>
+  <data name="changePasswordBtn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>196, 46</value>
+  </data>
+  <data name="changePasswordBtn.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="changePasswordBtn.Text" xml:space="preserve">
+    <value>Đổi mật khẩu</value>
+  </data>
+  <data name="&gt;&gt;changePasswordBtn.Name" xml:space="preserve">
+    <value>changePasswordBtn</value>
+  </data>
+  <data name="&gt;&gt;changePasswordBtn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;changePasswordBtn.Parent" xml:space="preserve">
+    <value>profileTab</value>
+  </data>
+  <data name="&gt;&gt;changePasswordBtn.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="changeProfileNameBtn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>17, 123</value>
+  </data>
+  <data name="changeProfileNameBtn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>196, 46</value>
+  </data>
+  <data name="changeProfileNameBtn.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="changeProfileNameBtn.Text" xml:space="preserve">
+    <value>Đổi tên hồ sơ</value>
+  </data>
+  <data name="&gt;&gt;changeProfileNameBtn.Name" xml:space="preserve">
+    <value>changeProfileNameBtn</value>
+  </data>
+  <data name="&gt;&gt;changeProfileNameBtn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;changeProfileNameBtn.Parent" xml:space="preserve">
+    <value>profileTab</value>
+  </data>
+  <data name="&gt;&gt;changeProfileNameBtn.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
   <data name="profileNameLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -434,10 +515,13 @@
     <value>Segoe UI, 9.75pt, style=Bold</value>
   </data>
   <data name="profileNameLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 30</value>
+    <value>17, 64</value>
+  </data>
+  <data name="profileNameLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 0, 6, 0</value>
   </data>
   <data name="profileNameLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>136, 17</value>
+    <value>266, 36</value>
   </data>
   <data name="profileNameLabel.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -458,13 +542,16 @@
     <value>profileTab</value>
   </data>
   <data name="&gt;&gt;profileNameLabel.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>2</value>
   </data>
   <data name="profileTab.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 24</value>
+    <value>8, 46</value>
+  </data>
+  <data name="profileTab.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 6, 6, 6</value>
   </data>
   <data name="profileTab.Size" type="System.Drawing.Size, System.Drawing">
-    <value>246, 332</value>
+    <value>456, 714</value>
   </data>
   <data name="profileTab.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -485,7 +572,10 @@
     <value>2</value>
   </data>
   <data name="appTabs.Location" type="System.Drawing.Point, System.Drawing">
-    <value>-1, 0</value>
+    <value>-2, 0</value>
+  </data>
+  <data name="appTabs.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 6, 6, 6</value>
   </data>
   <data name="appTabs.Padding" type="System.Drawing.Point, System.Drawing">
     <value>8, 3</value>
@@ -494,7 +584,7 @@
     <value>True</value>
   </data>
   <data name="appTabs.Size" type="System.Drawing.Size, System.Drawing">
-    <value>254, 360</value>
+    <value>472, 768</value>
   </data>
   <data name="appTabs.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -515,10 +605,13 @@
     <value>True</value>
   </data>
   <data name="noticeLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 363</value>
+    <value>6, 774</value>
+  </data>
+  <data name="noticeLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 0, 6, 0</value>
   </data>
   <data name="noticeLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>153, 15</value>
+    <value>311, 32</value>
   </data>
   <data name="noticeLabel.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -542,10 +635,16 @@
     <value>True</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>7, 15</value>
+    <value>13, 32</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>251, 382</value>
+    <value>466, 815</value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 6, 6, 6</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Kinsen </value>

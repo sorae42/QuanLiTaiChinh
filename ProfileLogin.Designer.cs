@@ -37,67 +37,73 @@
             label3 = new Label();
             SuspendLayout();
             // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Segoe UI", 8.25F, FontStyle.Italic, GraphicsUnit.Point);
+            label3.Location = new Point(22, 226);
+            label3.Margin = new Padding(6, 0, 6, 0);
+            label3.Name = "label3";
+            label3.Size = new Size(260, 90);
+            label3.TabIndex = 5;
+            label3.Text = "Bạn có thể đăng ký hồ sơ\r\nmới nếu bạn không có\r\nbằng cách bấm Xác nhận.";
+            // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(12, 9);
+            label1.Location = new Point(22, 19);
+            label1.Margin = new Padding(6, 0, 6, 0);
             label1.Name = "label1";
-            label1.Size = new Size(90, 15);
+            label1.Size = new Size(184, 32);
             label1.TabIndex = 0;
             label1.Text = "Tên người dùng";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(12, 57);
+            label2.Location = new Point(22, 122);
+            label2.Margin = new Padding(6, 0, 6, 0);
             label2.Name = "label2";
-            label2.Size = new Size(57, 15);
+            label2.Size = new Size(115, 32);
             label2.TabIndex = 1;
             label2.Text = "Mật khẩu";
             // 
             // usernameInput
             // 
-            usernameInput.Location = new Point(12, 27);
+            usernameInput.Location = new Point(22, 58);
+            usernameInput.Margin = new Padding(6);
             usernameInput.Name = "usernameInput";
             usernameInput.PlaceholderText = "johnuser";
-            usernameInput.Size = new Size(243, 23);
+            usernameInput.Size = new Size(448, 39);
             usernameInput.TabIndex = 2;
             // 
             // passwordInput
             // 
-            passwordInput.Location = new Point(12, 75);
+            passwordInput.Location = new Point(22, 160);
+            passwordInput.Margin = new Padding(6);
             passwordInput.Name = "passwordInput";
             passwordInput.PasswordChar = '●';
             passwordInput.PlaceholderText = "●●●●●●●●●";
-            passwordInput.Size = new Size(243, 23);
+            passwordInput.Size = new Size(448, 39);
             passwordInput.TabIndex = 3;
             passwordInput.UseSystemPasswordChar = true;
             // 
             // submitBtn
             // 
-            submitBtn.Location = new Point(160, 111);
+            submitBtn.Location = new Point(297, 237);
+            submitBtn.Margin = new Padding(6);
             submitBtn.Name = "submitBtn";
-            submitBtn.Size = new Size(95, 34);
+            submitBtn.Size = new Size(176, 73);
             submitBtn.TabIndex = 4;
             submitBtn.Text = "Xác nhận";
             submitBtn.UseVisualStyleBackColor = true;
             submitBtn.Click += submitBtn_Click;
             // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI", 8.25F, FontStyle.Italic, GraphicsUnit.Point);
-            label3.Location = new Point(12, 106);
-            label3.Name = "label3";
-            label3.Size = new Size(130, 39);
-            label3.TabIndex = 5;
-            label3.Text = "Bạn có thể đăng ký hồ sơ\r\nmới nếu bạn không có\r\nbằng cách bấm Xác nhận.";
-            // 
             // ProfileLogin
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(267, 157);
+            ClientSize = new Size(496, 335);
             Controls.Add(label3);
             Controls.Add(submitBtn);
             Controls.Add(passwordInput);
@@ -105,11 +111,13 @@
             Controls.Add(label2);
             Controls.Add(label1);
             FormBorderStyle = FormBorderStyle.FixedSingle;
+            Margin = new Padding(6);
             MaximizeBox = false;
             MinimizeBox = false;
             Name = "ProfileLogin";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Kinsen";
-            Load += ProfileLogin_Load;
+            Activated += ProfileLogin_Activated;
             ResumeLayout(false);
             PerformLayout();
         }

@@ -45,6 +45,8 @@
             spendAmount = new ColumnHeader();
             dateChooser = new DateTimePicker();
             profileTab = new TabPage();
+            changePasswordBtn = new Button();
+            changeProfileNameBtn = new Button();
             profileNameLabel = new Label();
             noticeLabel = new Label();
             label2 = new Label();
@@ -132,7 +134,9 @@
             // spendingList
             // 
             spendingList.Columns.AddRange(new ColumnHeader[] { spendID, spendName, spendAmount });
+            spendingList.FullRowSelect = true;
             resources.ApplyResources(spendingList, "spendingList");
+            spendingList.MultiSelect = false;
             spendingList.Name = "spendingList";
             spendingList.UseCompatibleStateImageBehavior = false;
             spendingList.View = View.Details;
@@ -157,11 +161,27 @@
             // 
             // profileTab
             // 
+            profileTab.Controls.Add(changePasswordBtn);
+            profileTab.Controls.Add(changeProfileNameBtn);
             profileTab.Controls.Add(profileNameLabel);
             profileTab.Controls.Add(label7);
             resources.ApplyResources(profileTab, "profileTab");
             profileTab.Name = "profileTab";
             profileTab.UseVisualStyleBackColor = true;
+            // 
+            // changePasswordBtn
+            // 
+            resources.ApplyResources(changePasswordBtn, "changePasswordBtn");
+            changePasswordBtn.Name = "changePasswordBtn";
+            changePasswordBtn.UseVisualStyleBackColor = true;
+            changePasswordBtn.Click += changePasswordBtn_Click;
+            // 
+            // changeProfileNameBtn
+            // 
+            resources.ApplyResources(changeProfileNameBtn, "changeProfileNameBtn");
+            changeProfileNameBtn.Name = "changeProfileNameBtn";
+            changeProfileNameBtn.UseVisualStyleBackColor = true;
+            changeProfileNameBtn.Click += changeProfileNameBtn_Click;
             // 
             // profileNameLabel
             // 
@@ -185,8 +205,8 @@
             MinimizeBox = false;
             Name = "MainWindow";
             ShowIcon = false;
-            Load += MainWindow_Load;
             FormClosing += MainWindow_FormClosing;
+            Load += MainWindow_Load;
             appTabs.ResumeLayout(false);
             addFundTab.ResumeLayout(false);
             addFundTab.PerformLayout();
@@ -215,5 +235,7 @@
         private ColumnHeader spendID;
         private ColumnHeader spendName;
         private ColumnHeader spendAmount;
+        private Button changeProfileNameBtn;
+        private Button changePasswordBtn;
     }
 }

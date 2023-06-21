@@ -9,21 +9,25 @@ namespace QuanLiTaiChinh
             InitializeComponent();
         }
 
-        private void ProfileLogin_Load(object sender, EventArgs e)
+        private void ProfileLogin_Activated(object sender, EventArgs e)
         {
-            System.Diagnostics.Debug.WriteLine("[INFO] Please log in!");
+            passwordInput.Text = string.Empty;
         }
 
         private void submitBtn_Click(object sender, EventArgs e)
         {
             string username = usernameInput.Text;
             string password = passwordInput.Text;
-            int id = ProcessLogin(username, password);
-            if (id != -1)
+
+            if (username.Length > 0 || password.Length > 0)
             {
-                MainWindow window = new MainWindow(id);
-                window.Show();
-                this.Hide();
+                int id = ProcessLogin(username, password);
+                if (id != -1)
+                {
+                    MainWindow window = new MainWindow(id, this);
+                    window.Show();
+                    this.Hide();
+                }
             }
         }
 
@@ -33,15 +37,13 @@ namespace QuanLiTaiChinh
 
             if (profileId == -1)
             {
-                if (MessageBox.Show("Tài khoản này không tồn tại. Bạn có muốn tạo mới không?", "", MessageBoxButtons.YesNo) == DialogResult.Yes)
+                if (MessageBox.Show("Hồ sơ với mật khẩu này không tồn tại. Bạn có muốn tạo hồ sơ mới không?", "", MessageBoxButtons.YesNo) == DialogResult.Yes)
                 {
                     LoginHandler.Register(username, password);
-                    MessageBox.Show("Tạo thành công! Vui lòng đăng nhập bằng tài khoản mới!");
                 }
             }
 
             return profileId;
         }
-
     }
 }

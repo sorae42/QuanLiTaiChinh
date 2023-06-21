@@ -1,17 +1,20 @@
 ﻿using System.Data;
 using QuanLiTaiChinh.Models;
-using QuanLiTaiChinh.Utils;
 
 namespace QuanLiTaiChinh
 {
     public partial class MainWindow : Form
     {
+        // hackery workaround: pass the profilelogin form
+        // in order to show it again (it's the main form)
         private int profileID;
+        ProfileLogin loginWindow;
 
-        public MainWindow(int id)
+        public MainWindow(int id, ProfileLogin loginWindow)
         {
             profileID = id;
             InitializeComponent();
+            this.loginWindow = loginWindow;
         }
 
         private void MainWindow_Load(object sender, EventArgs e)
@@ -20,12 +23,15 @@ namespace QuanLiTaiChinh
             profileNameLabel.Text = profileName;
             this.Text = "Kinsen - " + profileName;
 
-            this.Refresh();
+            dateChooser.Value = DateTime.Now;
+            getRecords();
+
+            Refresh();
         }
 
         private void MainWindow_FormClosing(object sender, FormClosingEventArgs e)
         {
-            
+            loginWindow.Show();
         }
 
         // Add Spending Tab
@@ -38,10 +44,30 @@ namespace QuanLiTaiChinh
             {
                 noticeLabel.Text = "Đã thêm thành công!!";
                 MessageBox.Show("Đã thêm thành công!!");
+                getRecords();
             }
         }
 
         private void dateChooser_ValueChanged(object sender, EventArgs e)
+        {
+            getRecords();
+        }
+
+
+        private void changeProfileNameBtn_Click(object sender, EventArgs e)
+        {
+            ChangeProfileName window = new ChangeProfileName(profileID);
+            window.ShowDialog();
+        }
+
+        private void changePasswordBtn_Click(object sender, EventArgs e)
+        {
+            ChangePassword window = new ChangePassword(profileID);
+            window.ShowDialog();
+        }
+
+
+        private void getRecords()
         {
             string dateChosen = dateChooser.Value.ToShortDateString();
             System.Diagnostics.Debug.WriteLine("[INFO] Attempt GET " + dateChosen);
