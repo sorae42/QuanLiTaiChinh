@@ -1,5 +1,6 @@
 ﻿using System.Data;
 using QuanLiTaiChinh.Models;
+using QuanLiTaiChinh.Utils;
 
 namespace QuanLiTaiChinh
 {
@@ -37,12 +38,13 @@ namespace QuanLiTaiChinh
         // Add Spending Tab
         private void addSpendingBtn_Click(object sender, EventArgs e)
         {
+            
             if (fundingNameInput.Text == null || fundingNameInput.Text == "")
                 return;
 
             if (Spending.add(fundingNameInput.Text, (int)fundSpentInput.Value, dateSelector.SelectionStart.ToShortDateString(), profileID) > 0)
             {
-                noticeLabel.Text = "Đã thêm thành công!!";
+                notify("Đã thêm thành công!!");
                 MessageBox.Show("Đã thêm thành công!!");
                 getRecords();
             }
@@ -69,8 +71,10 @@ namespace QuanLiTaiChinh
 
         private void getRecords()
         {
+            int total = 0;
             string dateChosen = dateChooser.Value.ToShortDateString();
             System.Diagnostics.Debug.WriteLine("[INFO] Attempt GET " + dateChosen);
+            notify("Đang lấy dữ liệu...");
             DataTable? result = Spending.getAll(profileID, dateChosen);
             spendingList.Items.Clear();
 
@@ -82,11 +86,28 @@ namespace QuanLiTaiChinh
                     string? amount = row["spendAmount"].ToString();
                     string? id = row["spendId"].ToString();
 
-                    string[] dataresult = { id, name, amount };
+                    string[] dataresult = { id, name, Helper.FormatNumber(int.Parse(amount)) };
                     var listview = new ListViewItem(dataresult);
                     spendingList.Items.Add(listview);
+
+                    total += int.Parse(amount);
                 }
+
             }
+
+            spendingTotal.Text = Helper.FormatNumber(total);
+            notify("Xong.");
+        }
+
+        private void notify(string message)
+        {
+            noticeLabel.Text = message;
+        }
+
+        private void deleteBtn_Click(object sender, EventArgs e)
+        {
+            string recordID = spendingList.SelectedItems[0].Text;
+            if (Spending.delete(recordID) > 0) getRecords(); 
         }
     }
 }

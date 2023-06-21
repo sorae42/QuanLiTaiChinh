@@ -115,6 +115,7 @@
             MaximizeBox = false;
             MinimizeBox = false;
             Name = "ProfileLogin";
+            ShowIcon = false;
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Kinsen";
             Activated += ProfileLogin_Activated;

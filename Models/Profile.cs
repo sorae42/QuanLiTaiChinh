@@ -18,7 +18,7 @@ namespace QuanLiTaiChinh.Models
             string? result = DataProvider.ExecuteScalar("SELECT profileName FROM Profiles WHERE profileId = @id", profileID) as string;
             if (result != null)
                 return result;
-            return "Guest";
+            return "Guest"; // should never returned but the intellicode needs to shut up
         }
 
         public static object? GetPrefs(int profileID) 

@@ -37,7 +37,7 @@ namespace QuanLiTaiChinh
 
             if (profileId == -1)
             {
-                if (MessageBox.Show("Hồ sơ với mật khẩu này không tồn tại. Bạn có muốn tạo hồ sơ mới không?", "", MessageBoxButtons.YesNo) == DialogResult.Yes)
+                if (MessageBox.Show("Hồ sơ này không tồn tại. Bạn có muốn tạo hồ sơ mới không?", "", MessageBoxButtons.YesNo) == DialogResult.Yes)
                 {
                     LoginHandler.Register(username, password);
                 }

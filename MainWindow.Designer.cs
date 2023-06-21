@@ -39,6 +39,10 @@
             fundingNameInput = new TextBox();
             dateSelector = new MonthCalendar();
             historyTab = new TabPage();
+            editBtn = new Button();
+            deleteBtn = new Button();
+            spendingTotal = new Label();
+            label3 = new Label();
             spendingList = new ListView();
             spendID = new ColumnHeader();
             spendName = new ColumnHeader();
@@ -125,19 +129,49 @@
             // 
             // historyTab
             // 
+            historyTab.Controls.Add(editBtn);
+            historyTab.Controls.Add(deleteBtn);
+            historyTab.Controls.Add(spendingTotal);
+            historyTab.Controls.Add(label3);
             historyTab.Controls.Add(spendingList);
             historyTab.Controls.Add(dateChooser);
             resources.ApplyResources(historyTab, "historyTab");
             historyTab.Name = "historyTab";
             historyTab.UseVisualStyleBackColor = true;
             // 
+            // editBtn
+            // 
+            resources.ApplyResources(editBtn, "editBtn");
+            editBtn.Name = "editBtn";
+            editBtn.UseVisualStyleBackColor = true;
+            // 
+            // deleteBtn
+            // 
+            resources.ApplyResources(deleteBtn, "deleteBtn");
+            deleteBtn.Name = "deleteBtn";
+            deleteBtn.UseVisualStyleBackColor = true;
+            deleteBtn.Click += deleteBtn_Click;
+            // 
+            // spendingTotal
+            // 
+            resources.ApplyResources(spendingTotal, "spendingTotal");
+            spendingTotal.Name = "spendingTotal";
+            // 
+            // label3
+            // 
+            resources.ApplyResources(label3, "label3");
+            label3.Name = "label3";
+            // 
             // spendingList
             // 
             spendingList.Columns.AddRange(new ColumnHeader[] { spendID, spendName, spendAmount });
+            spendingList.Cursor = Cursors.Hand;
             spendingList.FullRowSelect = true;
+            spendingList.GridLines = true;
             resources.ApplyResources(spendingList, "spendingList");
             spendingList.MultiSelect = false;
             spendingList.Name = "spendingList";
+            spendingList.ShowItemToolTips = true;
             spendingList.UseCompatibleStateImageBehavior = false;
             spendingList.View = View.Details;
             // 
@@ -212,6 +246,7 @@
             addFundTab.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)fundSpentInput).EndInit();
             historyTab.ResumeLayout(false);
+            historyTab.PerformLayout();
             profileTab.ResumeLayout(false);
             profileTab.PerformLayout();
             ResumeLayout(false);
@@ -237,5 +272,9 @@
         private ColumnHeader spendAmount;
         private Button changeProfileNameBtn;
         private Button changePasswordBtn;
+        private Label spendingTotal;
+        private Label label3;
+        private Button editBtn;
+        private Button deleteBtn;
     }
 }
