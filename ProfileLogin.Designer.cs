@@ -28,25 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Label label3;
             label1 = new Label();
             label2 = new Label();
             usernameInput = new TextBox();
             passwordInput = new TextBox();
             submitBtn = new Button();
-            label3 = new Label();
             SuspendLayout();
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI", 8.25F, FontStyle.Italic, GraphicsUnit.Point);
-            label3.Location = new Point(22, 226);
-            label3.Margin = new Padding(6, 0, 6, 0);
-            label3.Name = "label3";
-            label3.Size = new Size(260, 90);
-            label3.TabIndex = 5;
-            label3.Text = "Bạn có thể đăng ký hồ sơ\r\nmới nếu bạn không có\r\nbằng cách bấm Xác nhận.";
             // 
             // label1
             // 
@@ -104,7 +91,6 @@
             AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(496, 335);
-            Controls.Add(label3);
             Controls.Add(submitBtn);
             Controls.Add(passwordInput);
             Controls.Add(usernameInput);
