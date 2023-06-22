@@ -17,7 +17,7 @@ namespace QuanLiTaiChinh.Models
 
         public static DataTable GetPrefs(int profileID)
         {
-            return DataProvider.ExecuteReader("SELECT profilePrefDefaultName, profilePrefSpendingLimit, profilePrefStartupTab FROM Profiles WHERE profileId = @id", profileID);
+            return DataProvider.ExecuteReader("SELECT profilePrefSpendingLimit, profilePrefStartupTab FROM Profiles WHERE profileId = @id", profileID);
         }
 
     }

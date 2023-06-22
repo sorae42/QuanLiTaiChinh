@@ -21,7 +21,6 @@ namespace QuanLiTaiChinh.Models
 
         public static void Register(string username, string password)
         {
-            System.Diagnostics.Debug.WriteLine("[INFO] Attempt to register!");
             DataProvider.ExecuteNonQuery("INSERT INTO Profiles (profileName, profilePassword) VALUES ( @username , @password )", username, password);
         }
     }
