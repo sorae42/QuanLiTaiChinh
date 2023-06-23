@@ -40,7 +40,7 @@ namespace QuanLiTaiChinh
 
             if (profileId == -2)
             {
-                if (MessageBox.Show("Hồ sơ này không tồn tại. Bạn có muốn tạo hồ sơ mới không?", "", MessageBoxButtons.YesNo) == DialogResult.Yes)
+                if (MessageBox.Show("Hồ sơ này không tồn tại. Bạn có muốn tạo hồ sơ mới không?", "", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
                 {
                     LoginHandler.Register(username, password);
                     MessageBox.Show("Hồ sơ mới đã tạo thành công. Vui lòng đăng nhập bằng tên mới.");
@@ -48,7 +48,7 @@ namespace QuanLiTaiChinh
             }
             else if (profileId == -1)
             {
-                MessageBox.Show("Sai mật khẩu!");
+                MessageBox.Show("Mật khẩu không chính xác!", "", MessageBoxButtons.OK, MessageBoxIcon.Stop);
             }
             submitBtn_Status(1);
 
