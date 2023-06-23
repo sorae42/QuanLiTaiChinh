@@ -88,6 +88,7 @@
             // 
             // ProfileLogin
             // 
+            AcceptButton = submitBtn;
             AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(496, 304);
